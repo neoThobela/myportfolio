@@ -1,0 +1,138 @@
+
+body{
+    background:#e8e7e3 ;
+    font-family: "poppins";
+    margin:0;
+ 
+}
+.navbar{
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: context-menu;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .contents{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+
+    .logo{
+       
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'fira code';
+        color:black;
+        font-size: 20px;
+        
+        
+        span{
+         color:#d24aff   
+        }
+    }
+    .nav-items {
+        :hover{
+            color:#d24aff;
+        font-size: 17px;
+        font-weight: bold;
+        }
+        li{
+            display: inline-block;
+           padding-right: 1em
+        }
+        
+    }
+  
+}
+
+ul{
+    list-style: none;
+   }
+   .center-page{
+    align-content: center;
+    height: 100vh;
+   }
+   .section1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   }
+   .left-col{
+    width: 50%;
+   }
+   .paddingbottom50px{
+    padding-bottom: 50px;
+   }
+   
+   .heading{
+    color:#d24aff;
+   font-family: 'fira code';
+   }
+   .primary-button{
+    text-decoration: none;
+    background-color: #d24aff;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+   }
+//    .profilepicture
+//    {
+//     width: 10%;
+//     height: 00%;
+//    }
+.profilepicture{
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 100px;
+    }
+    .center{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       .aboutMe{
+       display: flex;
+       flex-direction: column;
+    //    justify-content: center;
+       align-items: center;
+       
+       }
+       
+        
+    }
+    .width82{
+        width: 82%;
+       }
+       .contanier{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        text-align: center;
+       }
+
+  .overlay:hover{
+    background-color: rgba(54, 53, 53,0.5);
+  }
+  .skillsname:hover{
+    // position: absolute;
+    // top: 50%;
+  
+    width:100%;
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+    height:100%;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }

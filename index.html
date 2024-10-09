@@ -17,25 +17,26 @@
     <div class="navbar">
         <!-- <i id ="hamburger-menu"class="fa fa-bars" aria-hidden="true"></i> -->
         <div class ="contents">
-          <a href="#"class="logo">My<span>Portfolio</span></a>
+          <a href="#"class="logo" id="myPortfolio">My<span>Portfolio</span></a>
        
           <ul class="nav-items">
             <!-- <i id ="hamburger-menu"class="fa fa-bars" aria-hidden="true"></i> -->
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
+            <a href="#home"><li >HOME</li></a>
+            <a href="#about"><li>ABOUT</li></a>
+            <a href="#skills"><li>SKILLS</li></a>
+            <a href="#contacts"><li>CONTACT</li></a>
           </ul>
         
         </div>
       </div>
-      <div class="homepage center-page">
+      <div class="homepage center-page" id="home">
 <div class="section1">
   <div class="left-col">
     <h1 class="paddingbottom50px"> <span class='heading'> "HELLO WORLD" </span> I am<span class='heading'> console.log("NEO MBALI THOBELA") </span>
     </h1>
     
     <div class="button">
-      <a href="#" class="primary-button">Download resume</a>
+      <a href="#" class="primary-button" download="cv/neo TCV.pdf.pdf">Download resume</a>
       <!-- <button type="button" onclick="alert('Hello world!')">Contact Me</button> -->
     </div>
     </div>
@@ -46,15 +47,15 @@
   </div>
 </div>
       </div>
-      <div class="center">
-
-     
-      <div class="aboutMe ">
-        <h1 class="AboutMeHeading width82"> About Me</h1>
-        <p class="width82" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, facilis minus laboriosam expedita eum dolore enim nemo voluptates at ut? Praesentium odio distinctio et aut, corporis saepe! At, accusamus eligendi!</p>
-      </div>
-      <div class="skills width82">
-        <h1 class="skillsHeading">
+      <div class="center" >
+      <div class="aboutMe" >
+        <h1 class="AboutMeHeading width82" id="about"> About Me</h1>
+        <p class="width82" >I am a passionate and detail-oriented graduate with a BSC Degree in
+          Computer Science and mathematical sciences from University of Limpopo.
+          Who is always willing to learn and grow. Possessing a foundation in statistical
+          modeling and programming, I am eager to apply my skills</p>
+      <div class="skills width82" >
+        <h1 class="skillsHeading" id="skills">
           My Skills
         </h1>
         <div class text="skills-contanier">
@@ -66,23 +67,23 @@
             <div class="skillsname ">JAVASCRIPT</div>
             
                 </div></li>
-            <li>
+            <!-- <li>
               <div class="overlay">
-              <img src="/images/js.png"  class="image" alt=" javascript Logo">
+              <img src="/images/sass.png"  class="image" alt=" javascript Logo">
                 
             <div class="skillsname ">JAVASCRIPT</div>
             
                 </div></li>
-            <li>
+            <li> -->
               <div class="overlay">
-              <img src="/images/js.png"  class="image" alt=" javascript Logo">
+              <img src="/images/html.webp"  class="image-html" alt=" javascript Logo">
                 
             <div class="skillsname">JAVASCRIPT</div>
             
                 </div></li>
            <li>
               <div class="overlay">
-              <img src="/images/js.png" alt=" javascript Logo">
+              <img src="/images/C++.png" alt=" javascript Logo">
                 
             <div class="skillsname">JAVASCRIPT</div>
             
@@ -91,24 +92,12 @@
         </div>
 
       </div>
-      <div class="portFolio-section">
-       <ul>
-        <li>
-          <h1>Covid App</h1>
-        </li>
-        <li>
-          <h1>Covid App</h1>
-        </li>
-        <li>
-          <h1>Covid App</h1>
-        </li>
-       </ul>
-      </div>
-      <div class="contact-me">
-        <div class="container">
+     
+      <div class="contact-me"  id="contacts">
+        <div class="container1">
           <div class="contact">
      <h2>Contact</h2>
-     <form action="">
+     <form action="" class="contact">
       <label for="name">Name</label>
       <input type="text"id="name" placeholder="Name" name="name">
       <label for="email">Email Address</label>

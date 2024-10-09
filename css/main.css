@@ -34,9 +34,10 @@ body {
   font-size: 17px;
   font-weight: bold;
 }
-.navbar .nav-items li {
+.navbar .nav-items a li {
   display: inline-block;
   padding-right: 1em;
+  color: black;
 }
 
 ul {
@@ -102,22 +103,30 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
   text-align: center;
 }
 
-.overlay:hover {
-  background-color: rgba(54, 53, 53, 0.5);
+html {
+  scroll-behavior: smooth;
 }
 
-.skillsname:hover {
+.image-html {
+  width: 50%;
+  height: 50%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input[type=text], input[type=email], textarea[type=message] {
   width: 100%;
-  position: absolute;
-  bottom: 20px;
-  right: 60px;
-  height: 100%;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */

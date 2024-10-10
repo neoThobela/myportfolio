@@ -21,8 +21,7 @@ body{
         align-items: center;
         
     }
-    
-
+   
     .logo{
        
         text-decoration: none;
@@ -86,12 +85,9 @@ ul{
     border-radius: 20px;
     color: white;
     font-weight: bold;
+    text-align: center;
    }
-//    .profilepicture
-//    {
-//     width: 10%;
-//     height: 00%;
-//    }
+
 .profilepicture{
     max-width: 500px;
     max-height: 500px;
@@ -120,8 +116,38 @@ ul{
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
+        
        }
 
+       .socials {
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+       }
+li{
+    i{
+    padding:1em;
+   
+    
+}
+}
+i:hover{
+    color:#d24aff;
+    
+}
+// .hide{
+//     display: none;
+// }
+// .socials:hover +.hide{
+// display: block;
+// color:#d24aff
+// }
+       footer {
+        width: 100%;
+       }
+    //    .container1{
+    //     width: 100%;
+    //    }
   html {
     scroll-behavior: smooth;
   }
@@ -134,7 +160,8 @@ ul{
     flex-direction: column;
     justify-content: space-between;
 }
-input[type=text],input[type=email],textarea[type=message] {
+
+input[type=text],input[type=email],.textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -142,5 +169,26 @@ input[type=text],input[type=email],textarea[type=message] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family: "poppins";
   }
-  
+.aboutMe{
+    background-color: #c7c7c7;
+}
+.padding1em{
+    padding: 1em;
+}
+.imgSkills{
+ border:black 1px;
+}
+.animaion{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 1.5s linear forwards;
+}
+@keyframes moveup{
+   100%{
+    opacity:1;
+    transform: translateY(30px)
+   }
+
+}

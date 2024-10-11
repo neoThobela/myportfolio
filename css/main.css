@@ -8,6 +8,10 @@ body {
   font-family: "fira code";
 }
 
+.poppins {
+  font-family: "poppins";
+}
+
 .navbar {
   background-color: white;
   padding-left: 10px;
@@ -142,6 +146,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 input[type=text], input[type=email], .textarea {
@@ -152,7 +157,7 @@ input[type=text], input[type=email], .textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-family: "poppins";
+  font-family: "fira code";
 }
 
 .aboutMe {
@@ -184,4 +189,25 @@ input[type=text], input[type=email], .textarea {
 }
 .fa {
   color: black;
+}
+
+.contact-me {
+  background-image: url(/images/background3.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.width60 {
+  width: 60%;
+}
+
+.white-font {
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
 }/*# sourceMappingURL=main.css.map */

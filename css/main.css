@@ -119,6 +119,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0;
 }
 
 li i {
@@ -131,6 +132,15 @@ i:hover {
 
 footer {
   width: 100%;
+  background-color: black;
+}
+
+.container1 {
+  align-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 html {
@@ -188,10 +198,11 @@ input[type=text], input[type=email], .textarea {
   }
 }
 .fa {
-  color: black;
+  color: white;
 }
 
 .contact-me {
+  margin-bottom: 20px;
   background-image: url(/images/background3.jpeg);
   background-attachment: fixed;
   background-position: center;
@@ -208,6 +219,14 @@ input[type=text], input[type=email], .textarea {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(32, 32, 32, 0.8);
   padding: 1em;
+}
+
+.boarderradius20px {
+  border-radius: 20px;
+}
+
+.width60 {
+  width: 60%;
 }/*# sourceMappingURL=main.css.map */

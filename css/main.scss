@@ -96,9 +96,15 @@ ul{
    }
 
 .profilepicture{
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 510px;
+    max-height: 510px;
     border-radius: 100px;
+    }
+
+    .profilepicture:hover
+    {
+   height: 505px;
+   
     }
     .center{
        display: flex;
@@ -134,14 +140,16 @@ ul{
        }
 li{
     i{
-    padding:1em;
-   
+        padding: 10px 25px;   
     
 }
 }
 i:hover{
     color:#d24aff;
     
+}
+.fa:hover{
+    font-size: 36px!important;
 }
 // .hide{
 //     display: none;
@@ -214,10 +222,12 @@ input[type=text],input[type=email],.textarea {
 }
 .fa{
     color: white;
+    font-size: 34px!important;
 }
+
 .contact-me{
     margin-bottom: 20px;
-    background-image: url(/images/background3.jpeg);
+    background-image: url(/images/Art\ Warehouse\ in\ Boeotia\ by\ A31\ Architecture\ \(1\).jfif);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -232,12 +242,26 @@ input[type=text],input[type=email],.textarea {
     color: white;
 }
 .overlay{
-    background-color: rgba(32, 32, 32, 0.8);
+    background-color: rgba(29, 29, 29, 0.7);
     padding: 1em;
 }
 .boarderradius20px{
     border-radius: 20px;
 }
+.width33{
+    width: 33%;
+}
 .width60{
     width: 60%;
+}
+.dev-section{
+    padding-bottom: 1em;
+    font-family: 'Fira Code';
+    color: #3a3939;
+}
+.expirence
+{
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-end;
 }

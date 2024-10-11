@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+.firacode {
+  font-family: "fira code";
+}
+
 .navbar {
   background-color: white;
   padding-left: 10px;
@@ -152,6 +156,9 @@ input[type=text], input[type=email], .textarea {
 }
 
 .aboutMe {
+  width: 85%;
+  height: 60vh;
+  border-radius: 10px;
   background-color: #c7c7c7;
 }
 

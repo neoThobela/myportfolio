@@ -5,6 +5,9 @@ body{
     margin:0;
  
 }
+.firacode{
+    font-family: 'fira code';
+} 
 .navbar{
     background-color: white;
     padding-left: 10px;
@@ -35,6 +38,7 @@ body{
          color:#d24aff   
         }
     }
+    
     .nav-items {
         :hover{
             color:#d24aff;
@@ -172,8 +176,13 @@ input[type=text],input[type=email],.textarea {
     font-family: "poppins";
   }
 .aboutMe{
+    width: 85%;
+    height: 60vh;
+    border-radius: 10px;
     background-color: #c7c7c7;
+    
 }
+
 .padding1em{
     padding: 1em;
 }

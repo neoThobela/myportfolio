@@ -158,6 +158,10 @@ i:hover{
 // display: block;
 // color:#d24aff
 // }
+.skillsname{
+    font-size: 30px;
+    font-family: 'Fira Code'!important;
+}
        footer {
         width: 100%;
         background-color: black;
@@ -199,7 +203,7 @@ input[type=text],input[type=email],.textarea {
     height: 60vh;
     border-radius: 10px;
     background-color: #c7c7c7;
-    
+    padding: 20px;
 }
 
 .padding1em{
@@ -234,6 +238,9 @@ input[type=text],input[type=email],.textarea {
     background-size: cover;
    
    
+}
+hr{
+    color: #942222!important;
 }
 .width60{
     width:60%;

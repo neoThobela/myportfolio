@@ -250,18 +250,18 @@ input[type=text],input[type=email],.textarea {
 .imgSkills{
  border:black 1px;
 }
-.animaion{
-    opacity: 0;
-    transform: translateY(30px);
-    animation: moveup 1.5s linear forwards;
-}
-@keyframes moveup{
-   100%{
-    opacity:1;
-    transform: translateY(30px)
-   }
+// .animaion{
+//     opacity: 0;
+//     transform: translateY(30px);
+//     animation: moveup 1.5s linear forwards;
+// }
+// @keyframes moveup{
+//    100%{
+//     opacity:1;
+//     transform: translateY(30px)
+//    }
 
-}
+// }
 .fa{
     color: white;
     font-size: 34px!important;
@@ -345,6 +345,35 @@ hr{
 @media all and (max-width:768px) {
     .width33 {
         width: 52%;
+    }
+}
+@media all and (max-width:412px) {
+    .section1 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .left-col {
+        height: 47vh;
+        width: 50%;
+        padding-top: 113px;
+        font-size: 14px;
+    }
+    .contanier {
+        display: flex;
+        flex-direction: column ;
+        justify-content: flex-start ;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        align-content: flex-start;
+        
+    }
+    .aboutMe {
+        margin-top: 123px;
     }
 }
 

@@ -19,12 +19,25 @@
         <div class ="contents">
           <a href="#"class="logo" id="myPortfolio">My<span>Portfolio</span></a>
        
+          
+          <ul class="side-bar">
+            <li onclick=hideSidebar()><i class="fa fa-times hamburger-btn" ></i></li>
+
+
+            <a href="#home"><li class="side-navitems">HOME</li></a>
+            <a href="#about"><li class="side-navitems">ABOUT</li></a>
+            <a href="#skills"><li class="side-navitems">SKILLS</li></a>
+            <a href="#contacts"><li class="side-navitems">CONTACT</li></a>
+          </ul>
+
           <ul class="nav-items">
             <!-- <i id ="hamburger-menu"class="fa fa-bars" aria-hidden="true"></i> -->
-            <a href="#home"><li >HOME</li></a>
-            <a href="#about"><li>ABOUT</li></a>
-            <a href="#skills"><li>SKILLS</li></a>
-            <a href="#contacts"><li>CONTACT</li></a>
+            <a href="#home" class="hideOnMobile"><li >HOME</li></a>
+            <a href="#about" class="hideOnMobile"><li >ABOUT</li></a>
+            <a href="#skills" class="hideOnMobile"><li >SKILLS</li></a>
+            <a href="#contacts" class="hideOnMobile"><li >CONTACT</li></a>
+          <a href="#" class="showOnMobile"> <li onclick=showSidebar()><i class="fa fa-bars hamburger-btn " ></i></li></a> 
+
           </ul>
         
         </div>
@@ -69,35 +82,35 @@
         </h1>
         <div class text="skills-contanier">
           <ul class="contanier">
-            <li class="width33">
+            <li class="width50">
               <div class="padding1em">
               <img src="/images/js.png"  class="image" alt=" javascript Logo">
                 
             <div class="skillsname ">JAVASCRIPT</div>
             
                 </div></li>
-            <li class="width33">
+            <li class="width50">
               <div class="padding1em">
               <img src="/images/css.png"  class="image" alt=" javascript Logo">
                 
             <div class="skillsname ">CSS</div>
             
                 </div></li>
-                <li class="width33">
+                <li class="width50">
                   <div class="padding1em">
                   <img src="/images/sql.png"  class="image" alt=" javascript Logo">
                     
                 <div class="skillsname ">SQL</div>
                 
                     </div></li>
-            <li class="width33">
+            <li class="width50">
               <div class="padding1em imgSkills">
               <img src="/images/html.png"  alt=" javascript Logo">
                 
             <div class="skillsname">HTML</div>
             
                 </div></li>
-           <li class="width33">
+           <li class="width50">
               <div class="padding1em">
               <img src="/images/C++.png" alt=" javascript Logo">
                 
@@ -150,5 +163,16 @@
       
 
     </div>
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.side-bar')
+        sidebar.style.display= 'flex'
+      }
+
+      function hideSidebar(){
+          const sidebar = document.querySelector('.side-bar')
+        sidebar.style.display= 'none'
+      }
+    </script>
 </body>
 </html>

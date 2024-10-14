@@ -12,6 +12,37 @@ body {
   font-family: "poppins";
 }
 
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  box-shadow: -10px 0 10px rgba(29, 29, 29, 0.7);
+  margin-top: 0;
+  width: 70%;
+  background-color: #ccc;
+  display: none;
+}
+.side-bar .side-navitems {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.hamburger-btn {
+  color: black !important;
+  padding-right: 57px;
+  display: none;
+}
+
+.showOnMobile {
+  display: none;
+}
+
 .navbar {
   background-color: white;
   padding-left: 10px;
@@ -36,6 +67,11 @@ body {
 }
 .navbar .logo span {
   color: #d24aff;
+}
+.navbar .nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .navbar .nav-items :hover {
   color: #d24aff;
@@ -250,6 +286,10 @@ hr {
   width: 33%;
 }
 
+.width50 {
+  width: 50%;
+}
+
 .width60 {
   width: 60%;
 }
@@ -280,6 +320,17 @@ hr {
   }
   .skills-conainer {
     width: 90%;
+  }
+  .hideOnMobile {
+    display: none;
+  }
+  .showOnMobile {
+    display: block;
+  }
+}
+@media all and (max-width: 768px) {
+  .width33 {
+    width: 52%;
   }
 }
 @media all and (max-width: 768px) {

@@ -185,7 +185,7 @@ input[type=text], input[type=email], .textarea {
 
 .aboutMe {
   width: 85%;
-  height: 60vh;
+  height: 100%;
   border-radius: 10px;
   background-color: #c7c7c7;
   padding: 20px;
@@ -264,4 +264,26 @@ hr {
   display: flex;
   align-content: stretch;
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+  .contanier {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  .skills {
+    width: 87%;
+  }
+  .skills-conainer {
+    width: 90%;
+  }
+}
+@media all and (max-width: 768px) {
+  .width33 {
+    width: 52%;
+  }
 }/*# sourceMappingURL=main.css.map */

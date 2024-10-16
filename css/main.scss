@@ -282,6 +282,7 @@ input[type=text],input[type=email],.textarea {
     align-content: stretch;
     justify-content: space-evenly;
     align-items: baseline;
+    flex-direction: row;
 
 }
 .project{
@@ -433,6 +434,52 @@ hr{
     .aboutMe {
         margin-top: 123px;
     }
+}
+@media all and (max-width: 375px) {
+    .center-page {
+        align-content: center;
+        height: 144vh;
+    }
+    .profilepicture {
+        max-width: 510px;
+        max-height: 510px;
+        border-radius: 0;
+        padding-top: 121px;
+    }
+    .left-col {
+        height: 47vh;
+        width: 60%;
+        padding-top: 113px;
+        font-size: 14px;
+    }
+    .image{
+        width: 90%;
+    }
+    .projects-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: space-evenly;
+        align-items: baseline;
+        flex-direction: column;
+    }
+    .project{
+        flex-wrap: wrap;
+    }
+    .projects-section{
+       .width60{
+        width: 100%;
+       } 
+    }
+    p{
+        
+width: 100%!important;
+        
+    }
+    .hamburger-btn {
+        padding-right: 30px;
+    }
+       
 }
 
 

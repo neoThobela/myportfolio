@@ -16,6 +16,10 @@ body {
   font-family: "Courier Prime";
 }
 
+.width70 {
+  width: 70%;
+}
+
 .side-bar {
   display: flex;
   flex-direction: column;

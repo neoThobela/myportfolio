@@ -378,9 +378,10 @@ hr{
     background-color: #cac9c5;
     padding: 5px;
     border-top: #d24aff 5px solid;
+   
 }
 img:hover{
-    padding: 10px;
+    padding: 5px;
 }
 @media screen and (max-width:1024px) {
     .contanier{
@@ -408,6 +409,21 @@ img:hover{
 @media all and (max-width:768px) {
     .width33 {
         width: 52%;
+    }
+    .projects-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: baseline;
+        flex-direction: column;
+    }
+    .project {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
     }
    
 }

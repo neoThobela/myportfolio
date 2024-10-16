@@ -12,6 +12,10 @@ body {
   font-family: "poppins";
 }
 
+.Courier-Prime {
+  font-family: "Courier Prime";
+}
+
 .side-bar {
   display: flex;
   flex-direction: column;
@@ -109,7 +113,11 @@ ul {
 
 .heading {
   color: #d24aff;
-  font-family: "fira code";
+  font-family: "Courier Prime";
+}
+
+.vt323 {
+  font-family: "VT323";
 }
 
 .primary-button {
@@ -248,8 +256,43 @@ input[type=text], input[type=email], .textarea {
   align-items: baseline;
 }
 
+.project {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.background-color-white {
+  background-color: white;
+  width: 90%;
+  padding: 20px;
+}
+
 .heading70px {
   font-size: 0px;
+}
+
+.vl {
+  border-left: 2px solid black;
+  height: 500px;
+}
+
+.width30 {
+  width: 30%;
+}
+
+.width55 {
+  width: 55%;
+}
+
+.width70 {
+  width: 70%;
+}
+
+.width100 {
+  width: 100%;
 }
 
 .contact-me {

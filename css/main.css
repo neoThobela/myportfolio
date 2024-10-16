@@ -358,6 +358,16 @@ hr {
   justify-content: flex-end;
 }
 
+.hoveredu:hover {
+  background-color: #cac9c5;
+  padding: 5px;
+  border-top: #d24aff 5px solid;
+}
+
+img:hover {
+  padding: 10px;
+}
+
 @media screen and (max-width: 1024px) {
   .contanier {
     display: flex;

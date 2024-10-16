@@ -335,6 +335,7 @@ input[type=text],input[type=email],.textarea {
 hr{
     color: #942222!important;
 }
+
 .width60{
     width:60%;
 }
@@ -366,11 +367,20 @@ hr{
     border-bottom: 2px solid #d24aff;
    
 }
+
 .expirence
 {
     display: flex;
     align-content: stretch;
     justify-content: flex-end;
+}
+.hoveredu:hover{
+    background-color: #cac9c5;
+    padding: 5px;
+    border-top: #d24aff 5px solid;
+}
+img:hover{
+    padding: 10px;
 }
 @media screen and (max-width:1024px) {
     .contanier{

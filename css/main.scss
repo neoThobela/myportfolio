@@ -367,7 +367,12 @@ hr{
     border-bottom: 2px solid #d24aff;
    
 }
-
+// h1{
+//     font-size: 40px;
+// }
+.monoton{
+    font-family: "Monoton"
+  }
 .expirence
 {
     display: flex;
@@ -489,6 +494,8 @@ img:hover{
         align-items: baseline;
         flex-direction: column;
     }
+ 
+
     .project{
         flex-wrap: wrap;
     }

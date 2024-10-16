@@ -352,6 +352,10 @@ hr {
   border-bottom: 2px solid #d24aff;
 }
 
+.monoton {
+  font-family: "Monoton";
+}
+
 .expirence {
   display: flex;
   align-content: stretch;

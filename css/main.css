@@ -351,7 +351,10 @@ hr {
 .purple-line {
   border-bottom: 2px solid #d24aff;
 }
-
+.footer{
+  color:white;
+  text-align: center;
+}
 .monoton {
   font-family: "Monoton";
 }

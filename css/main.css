@@ -393,6 +393,13 @@ img:hover {
   .showOnMobile {
     display: block;
   }
+  .profilepicture {
+    margin-top: 89px;
+   
+    max-width: 498px;
+    max-height: 491px;
+    border-radius: 100px;
+}
 }
 @media all and (max-width: 768px) {
   .width33 {

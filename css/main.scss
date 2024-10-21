@@ -206,6 +206,7 @@ i:hover{
         width: 100%;
         background-color: black;
         color: #e8e7e3;
+
        }
        .container1{
         align-content: space-around;
@@ -269,6 +270,12 @@ input[type=text],input[type=email],.textarea {
     flex-direction: row;
 
 }
+.footerCenter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
 .project{
     display: flex;
     flex-wrap: nowrap;
@@ -308,7 +315,7 @@ input[type=text],input[type=email],.textarea {
 }
 .contact-me{
     margin-bottom: 20px;
-    background-image: url('/images/Art\ Warehouse\ in\ Boeotia\ by\ A31\ Architecture\ \(1\).jfif');
+    background-image: url(/images/background1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

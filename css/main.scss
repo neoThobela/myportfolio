@@ -105,8 +105,14 @@ body{
 }
 .education{
     background-color:rgba(29, 29, 29, 0.3);
-    border-radius: 2px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
 }
+.expirence{
+    display: flex;
+}
+
 h1{
     font-size: 48px;
 }
@@ -383,6 +389,9 @@ hr{
    width: 400px;
    
 }
+.width90{
+    width: 90%;
+}
 .hoveredu:hover{
     
     background-color: #f7f6f5;
@@ -448,6 +457,7 @@ img:hover{
     }
    
 }
+
 @media all and (max-width:768px) {
     .width33 {
         width: 52%;

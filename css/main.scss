@@ -1,16 +1,14 @@
 
 body{
     background:#e8e7e3 ;
-    font-family: "poppins";
+    font-family: "fira code";
     margin:0;
  
 }
 .firacode{
     font-family: 'fira code';
 } 
-.poppins{
-    font-family: "poppins";
-}
+
 .Courier-Prime {
     font-family: "Courier Prime"}
 .width70{
@@ -37,7 +35,7 @@ body{
         padding: 12px;
         text-decoration: none;
         color: black;
-
+  font-size: xx-large;
     }
   
 }
@@ -87,6 +85,7 @@ body{
         display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-weight: bold;
         :hover{
             color:#d24aff;
         font-size: 17px;
@@ -104,7 +103,13 @@ body{
     }
   
 }
-
+.education{
+    background-color:rgba(29, 29, 29, 0.3);
+    border-radius: 2px;
+}
+h1{
+    font-size: 48px;
+}
 ul{
     list-style: none;
    }
@@ -244,7 +249,7 @@ input[type=text],input[type=email],.textarea {
     width: 85%;
     height: 100%;
     border-radius: 10px;
-    background-color: #c7c7c7;
+    
     padding: 20px;
 }
 
@@ -262,7 +267,7 @@ input[type=text],input[type=email],.textarea {
 .projects-section
 {
  
-    display: flex;
+    
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: space-evenly;
@@ -315,7 +320,7 @@ input[type=text],input[type=email],.textarea {
 }
 .contact-me{
     margin-bottom: 20px;
-    background-image: url(/images/background1.jpg);
+    background-image: url(/images/Art\ Warehouse\ in\ Boeotia\ by\ A31\ Architecture\ \(1\).jfif);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

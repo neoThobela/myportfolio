@@ -379,13 +379,17 @@ hr{
     box-shadow: 2px 2px 2px 2px #d8d6d6;
     margin: 20px;
    border-radius: 10px;
+   display: flex;
+   width: 317px;
    
 }
 .hoveredu:hover{
+    
     background-color: #f7f6f5;
     padding: 5px;
     box-shadow: 2px 2px 2px 2px #d24aff;
     margin: 20px;
+    padding: 15px;
    
 }
 img:hover{

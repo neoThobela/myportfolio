@@ -412,7 +412,7 @@ img:hover {
   font-family: arial;
   height: 600px;
   padding: 20px;
-  border: #d24aff 3px solid;
+  background: #a69898;
 }
 
 .title {
@@ -426,7 +426,7 @@ img:hover {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: black;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -444,7 +444,7 @@ a {
 }
 
 button:hover, a:hover {
-  background-color: #d24aff;
+  background-color: #000;
 }
 
 .profile-cards {

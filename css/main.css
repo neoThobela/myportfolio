@@ -457,6 +457,9 @@ a {
 .profile-cards {
   display: flex;
   margin-bottom: 20PX;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
 }
 
 .project-heading {

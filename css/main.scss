@@ -104,7 +104,7 @@ body{
   
 }
 .education{
-    background-color: rgba(103, 44, 21, 0.3);
+    background-color: #a69898;;
     padding: 20px;
     margin: 20px;
 }
@@ -157,11 +157,7 @@ ul{
     border-radius: 100px;
     }
 
-    .profilepicture:hover
-    {
-   height: 505px;
-   
-    }
+    
     .center{
        display: flex;
        flex-direction: column;
@@ -325,7 +321,7 @@ input[type=text],input[type=email],.textarea {
 }
 .contact-me{
     margin-bottom: 20px;
-    background-image: url(/myportfolio/images/Art\ Warehouse\ in\ Boeotia\ by\ A31\ Architecture\ \(1\).jfif);
+    background-image: url(/images/Art\ Warehouse\ in\ Boeotia\ by\ A31\ Architecture\ \(1\).jfif);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -412,9 +408,25 @@ hr{
     text-align: center;
     margin: 24px 0;
 }
-img:hover{
-    padding: 5px;
-}
+// img{
+//     transition: width 2s;
+// }
+// img:hover{
+//     width:100%;
+//     height: 100%;
+// }
+// img {
+   
+//     transition: transform .2s;
+    
+//   }
+  
+//   img:hover {
+//     -ms-transform: scale(1.5); /* IE 9 */
+//     -webkit-transform: scale(1.5); /* Safari 3-8 */
+//     transform: scale(1.5); 
+//   }
+ 
 //skills
 
 .card {
@@ -426,6 +438,12 @@ img:hover{
     height: 600px;
     padding: 20px;
     background: #a69898;
+    transition: transform .2s;
+  }
+  .card:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
   }
   
   .title {

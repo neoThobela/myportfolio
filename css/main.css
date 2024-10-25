@@ -73,7 +73,6 @@ body {
 }
 .navbar .nav-items :hover {
   color: #d24aff;
-  font-size: 17px;
   font-weight: bold;
 }
 .navbar .nav-items a li {
@@ -83,9 +82,10 @@ body {
 }
 
 .education {
-  background-color: #a69898;
+  background-color: rgba(166, 152, 152, 0.2705882353);
   padding: 20px;
-  margin: 20px;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .expirence {
@@ -121,7 +121,7 @@ ul {
 
 .heading {
   color: #d24aff;
-  font-family: "Courier Prime";
+  font-size: 38px;
 }
 
 .vt323 {
@@ -268,7 +268,6 @@ input[type=text], input[type=email], .textarea {
 }
 
 .background-color-white {
-  background-color: white;
   width: 90%;
   padding: 20px;
 }
@@ -360,29 +359,12 @@ hr {
   justify-content: flex-end;
 }
 
-.hoveredu {
-  background-color: #f7f6f5;
-  padding: 5px;
-  box-shadow: 2px 2px 2px 2px #d8d6d6;
-  margin: 20px;
-  border-radius: 10px;
-  width: 400px;
-}
-
 .width90 {
   width: 90%;
 }
 
 .width290PX {
   width: 290px;
-}
-
-.hoveredu:hover {
-  background-color: #f7f6f5;
-  padding: 5px;
-  box-shadow: 2px 2px 2px 2px #d24aff;
-  margin: 20px;
-  padding: 15px;
 }
 
 .secondary-button {
@@ -396,6 +378,14 @@ hr {
   margin: 24px 0;
 }
 
+.image {
+  transition: transform 0.2s;
+}
+
+.image:hover { /* IE 9 */ /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -404,7 +394,7 @@ hr {
   font-family: arial;
   height: 600px;
   padding: 20px;
-  background: #a69898;
+  background: rgba(166, 152, 152, 0.2705882353);
   transition: transform 0.2s;
 }
 
@@ -417,31 +407,51 @@ hr {
   font-size: 18px;
 }
 
-.long-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: black;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-  margin-left: -7px;
-}
-
 a {
   text-decoration: none;
   font-size: 22px;
   color: black;
 }
 
-button:hover, a:hover {
-  background-color: #000;
+/* From Uiverse.io by ernestnash */
+.long-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #d24aff;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin-left: -10px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+}
+
+.long-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.long-button:hover::before {
+  transform: translateX(0);
 }
 
 .profile-cards {

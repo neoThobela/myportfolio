@@ -672,8 +672,8 @@ a {
     align-items: center;
     justify-content: center;
   }
-  no-width {
-    width: 0;
+  .no-width {
+    width: 60%;
   }
   .card {
     margin-bottom: 20px;

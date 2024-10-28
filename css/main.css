@@ -408,13 +408,42 @@ hr {
   font-size: 18px;
 }
 
+.button {
+  display: flex;
+}
+
+.button-div {
+  margin-right: 66px;
+}
+
 a {
   text-decoration: none;
   font-size: 22px;
   color: black;
 }
 
-/* From Uiverse.io by ernestnash */
+.long-button-black {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin-left: -10px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+}
+
 .long-button {
   border: none;
   outline: 0;
@@ -648,13 +677,16 @@ a {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    height: 143vh;
+    height: 150vh;
     padding-top: 78px;
   }
   .expirence {
     display: flex;
     align-content: stretch;
     justify-content: center;
+  }
+  .button-div {
+    margin-right: 45px;
   }
   .exp-responsive {
     display: flex;
@@ -673,7 +705,7 @@ a {
     justify-content: center;
   }
   .no-width {
-    width: 60%;
+    width: 75%;
   }
   .card {
     margin-bottom: 20px;
@@ -747,4 +779,54 @@ a {
   .hamburger-btn {
     padding-right: 30px;
   }
+}
+.chatbot {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbox {
+  height: 400px;
+  padding: 10px;
+  overflow-y: scroll;
+  border-bottom: 1px solid #ddd;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.user-message {
+  background-color: #d1f5d3;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background-color: #f1f1f1;
+}
+
+.input-container {
+  display: flex;
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  width: 20%;
+  background-color: #d24aff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

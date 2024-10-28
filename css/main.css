@@ -804,12 +804,12 @@ a {
 }
 
 .user-message {
-  background-color: #d1f5d3;
+  background-color: #ddb6dd;
   align-self: flex-end;
 }
 
 .bot-message {
-  background-color: #f1f1f1;
+  background-color: #d1cbcb;
 }
 
 .input-container {
@@ -821,6 +821,7 @@ input[type=text] {
   padding: 10px;
   border: none;
   outline: none;
+  font-family: "poppins";
 }
 
 button {
@@ -829,4 +830,5 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  font-family: "poppins";
 }/*# sourceMappingURL=main.css.map */

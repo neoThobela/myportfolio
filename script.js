@@ -48,7 +48,7 @@ const keywords = {
     "name": ["your name", "who are you", "what are you called", "who am i talking to"],
     "portfolio" : ["portfolio", "Tell me about the portfolio", "what is this ?", "what am i looking at?"],
     "bye": ["bye", "goodbye", "see you", "later", "talk to you soon", "farewell"],
-    "projects":["projects"]
+    "projects":["what projects have you worked on","show me your work","tell me more about your projects"]
     
 };
 

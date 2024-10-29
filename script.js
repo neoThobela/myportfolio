@@ -1,8 +1,19 @@
+function showSidebar(){
+    const sidebar = document.querySelector('.side-bar')
+    sidebar.style.display= 'flex'
+  }
 
-const links = document.querySelectorAll('a');
-links.forEach(link => {
-    const linkUrl = link.href;
-    console.log(linkUrl)});
+  function hideSidebar(){
+      const sidebar = document.querySelector('.side-bar')
+    sidebar.style.display= 'none'
+  }
+
+
+function toggleChatbot() {
+    const chatbot = document.getElementById("chatbot");
+    chatbot.style.display = chatbot.style.display === "none" ? "flex" : "none";
+}
+
 const responses = {
     "greeting": [
         "Hi there! How can I help you today?",
@@ -11,7 +22,6 @@ const responses = {
     ],
     "how are you": [
         "I'm just a bot, but thanks for asking!",
-        "I'm here to help! How can I assist you?",
         "All systems go! How can I assist you?"
     ],
     "name": [
@@ -27,8 +37,7 @@ const responses = {
     "portfolio" : [
         "This is Neo's portfolio , feel free to browse through",
     ],
-    "projects" : [ 'vist my Github to see my projects <a href="/index.html">My Github</a> OR you can see a gimpls on my portfolilo <a href="/index.html">Link to projects</a>',
-        // " Go back to the profile to checkout the projects"
+    "projects" : [ 'vist my Github to see my projects <a href="/index.html">My Github</a> OR you can see a gimpls on my portfolilo <a href="/index.html">Link to projects</a>'
     ],
 
     "default": [
@@ -36,6 +45,7 @@ const responses = {
         "Could you please rephrase?",
         "Hmm, I don't quite understand."
     ]
+    
 };
 
 
@@ -48,7 +58,8 @@ const keywords = {
     "name": ["your name", "who are you", "what are you called", "who am i talking to"],
     "portfolio" : ["portfolio", "Tell me about the portfolio", "what is this ?", "what am i looking at?"],
     "bye": ["bye", "goodbye", "see you", "later", "talk to you soon", "farewell"],
-    "projects":["what projects have you worked on","show me your work","tell me more about your projects"]
+    "projects":["projects","what projects have you worked on","show me your work","tell me more about your projects"],
+    "projects":["projects","what projects have you worked on","show me your work","tell me more about your skills"]
     
 };
 
@@ -63,7 +74,7 @@ function sendMessage() {
         addMessageToChatbox("user", message);
         generateResponse(message);
         userInput.value = "";
-        console.log(message)
+        console.log("message " + message)
     }
 }
 
@@ -76,20 +87,35 @@ function addMessageToChatbox(sender, text) {
     chatbox.scrollTop = chatbox.scrollHeight; // Auto-scroll
 }
 
+
 // Generate bot response with keyword matching across categories
 function generateResponse(userMessage) {
     const lowerCaseMessage = userMessage.toLowerCase();
     let foundResponse = responses["default"];
-    console.log(userMessage);
-    // Check each category's keywords for a match in the user's message
+    console.log("foundResponse " + foundResponse);
+   // Check each category's keywords for a match in the user's message
     for (const category in keywords) {
         if (keywords[category].some(keyword => lowerCaseMessage.includes(keyword))) {
             foundResponse = responses[category];
-            console.log(category , keywords)
+            console.log(" category " + category 
+                +" keywords " 
+                + keywords[category])
             break;
         }
     }
-
+    // for (const category in keywords) {
+    //     // Check if any keyword in the current category is included in the message
+    //     if (keywords[category].some(keyword => lowerCaseMessage.includes(keyword))) {
+    //         // If a keyword is found, set the foundResponse to the corresponding response
+    //         foundResponse = responses[category];
+    
+    //         // Log the category and keywords for debugging purposes
+    //         console.log("Category:", category, "Keywords:", keywords[category]);
+    //         break; // Exit the loop once a match is found
+    //         else if()
+    //     }
+    // }
+    
     // Select a random response from the matching set of responses
     const response = foundResponse[Math.floor(Math.random() * foundResponse.length)];
     

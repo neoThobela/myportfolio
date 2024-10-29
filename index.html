@@ -19,41 +19,41 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       </head>
 <body>
+<!-- THE NAVIGATION BAR -->
+<div class="navbar ">
+       
+  <div class ="contents">
+    <a href="#"class="logo" id="myPortfolio">My<span>Portfolio</span></a>
+ 
+    
+    <ul class="side-bar">
+      <li onclick=hideSidebar()><i class="fa fa-times hamburger-btn" ></i></li>
 
+
+      <a href="#home"><li class="side-navitems">HOME</li></a>
+      <a href="#about"><li class="side-navitems">ABOUT</li></a>
+      <a href="#projects"><li class="side-navitems">PROJECT</li></a>
+      <a href="#skills"><li class="side-navitems">SKILLS</li></a>
+      <a href="#contacts"><li class="side-navitems">CONTACT</li></a>
+    </ul>
+
+    <ul class="nav-items">
+  
+      <a href="#home" class="hideOnMobile"><li >HOME</li></a>
+      <a href="#about" class="hideOnMobile"><li >ABOUT</li></a>
+      <a href="#projects" class="hideOnMobile"><li >PROJECTS</li></a>
+      <a href="#skills" class="hideOnMobile"><li >SKILLS</li></a>
+      <a href="#contacts" class="hideOnMobile"><li >CONTACT</li></a>
+    <a href="#" class="showOnMobile"> <li onclick=showSidebar()><i class="fa fa-bars hamburger-btn " ></i></li></a> 
+
+    </ul>
+  
+  </div>
+</div>
   <!-- THE MAIN DIV -->
   <div class="main-container">
 
-    <!-- THE NAVIGATION BAR -->
-    <div class="navbar ">
-       
-        <div class ="contents">
-          <a href="#"class="logo" id="myPortfolio">My<span>Portfolio</span></a>
-       
-          
-          <ul class="side-bar">
-            <li onclick=hideSidebar()><i class="fa fa-times hamburger-btn" ></i></li>
-
-
-            <a href="#home"><li class="side-navitems">HOME</li></a>
-            <a href="#about"><li class="side-navitems">ABOUT</li></a>
-            <a href="#projects"><li class="side-navitems">PROJECT</li></a>
-            <a href="#skills"><li class="side-navitems">SKILLS</li></a>
-            <a href="#contacts"><li class="side-navitems">CONTACT</li></a>
-          </ul>
-
-          <ul class="nav-items">
-        
-            <a href="#home" class="hideOnMobile"><li >HOME</li></a>
-            <a href="#about" class="hideOnMobile"><li >ABOUT</li></a>
-            <a href="#projects" class="hideOnMobile"><li >PROJECTS</li></a>
-            <a href="#skills" class="hideOnMobile"><li >SKILLS</li></a>
-            <a href="#contacts" class="hideOnMobile"><li >CONTACT</li></a>
-          <a href="#" class="showOnMobile"> <li onclick=showSidebar()><i class="fa fa-bars hamburger-btn " ></i></li></a> 
-
-          </ul>
-        
-        </div>
-      </div>
+    
       <!-- THE HOME PAGE -->
       <div class="homepage center-page" id="home">
 <div class="section1">
@@ -236,8 +236,8 @@
           <div class="contact width60 boarderradius20px">
      <h1 class="white-font Courier-Prime">[/> SAY HI!<span style='font-size:40px;'>&#128512;</span>
 </h1>
-     <form action=""  class="contact">
-      <div >
+     <form action="" class="contact">
+      <div  >
 
       <label for="name" class="white-font">Name</label>
       <input type="text"id="name"  placeholder="Name..." name="name">
@@ -245,8 +245,8 @@
       <input type="email"id="email" placeholder="Email..." name="email">
       <label for="number" class="white-font">Mobile Number</label>
       <input type="text"id="number" placeholder="Mobile Number..."name="number">
-<label for="message" class="white-font firacode" >Message</label>
-<textarea name="message" class="textarea firacode" id="message"placeholder="Enter a message..." ></textarea>
+<label for="message" class="white-font " >Message</label>
+<textarea name="message" class="textarea poppins" id="message"placeholder="Enter a message..." ></textarea>
 
       </div>
 <div class="width30 no-width">
@@ -258,6 +258,28 @@
         </div>
       </div>
       <footer>
+        <div id="chat-icon" class="chat-icon" onclick="toggleChatbot()">
+          💬
+      </div>
+      
+      <!-- <div id="chatbot" class="chatbot" style="display: none;">
+          <div id="chatbox" class="chatbox"></div>
+          <input type="text" id="userInput" class="input-container" placeholder="Type a message...">
+          <button onclick="sendMessage()">Send</button>
+        </div> -->
+        <div id="chatbot" class="chatbot" style="display: none;">
+          <div class="chat-header">
+              <h3>Chat with Us</h3>
+              <span class="close-btn" onclick="toggleChatbot()">✖</span>
+          </div>
+          <div id="chatbox" class="chatbox"></div>
+          <div class="input-container">
+              <input type="text" id="userInput" class="user-input" placeholder="Type a message...">
+              <button id="sendButton" class="send-button" onclick="sendMessage()">Send</button>
+          </div>
+      </div>
+      
+      
         <div class="footerCenter">
        <div class="footer">
         <p>&copy; Developed by NMST (2024). all rights reserved | 0832816746 | neo.thobela@capacti.org.za</p>
@@ -277,16 +299,8 @@
 
     </div>
     <!-- side nav -->
-    <script>
-      function showSidebar(){
-        const sidebar = document.querySelector('.side-bar')
-        sidebar.style.display= 'flex'
-      }
-
-      function hideSidebar(){
-          const sidebar = document.querySelector('.side-bar')
-        sidebar.style.display= 'none'
-      }
+    <script src="script.js">
+      
     </script>
 </body>
 </html>

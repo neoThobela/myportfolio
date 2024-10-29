@@ -1,19 +1,20 @@
+//show side bar
 function showSidebar(){
     const sidebar = document.querySelector('.side-bar')
     sidebar.style.display= 'flex'
   }
-
+//hide side bar
   function hideSidebar(){
       const sidebar = document.querySelector('.side-bar')
     sidebar.style.display= 'none'
   }
 
-
+//display and hide chatbot
 function toggleChatbot() {
     const chatbot = document.getElementById("chatbot");
     chatbot.style.display = chatbot.style.display === "none" ? "flex" : "none";
 }
-
+// an array of responses from questions
 const responses = {
     "greeting": [
         "Hi there! How can I help you today?",
@@ -39,11 +40,13 @@ const responses = {
     ],
     "projects" : [ 'vist my Github to see my projects <a href="/index.html">My Github</a> OR you can see a gimpls on my portfolilo <a href="/index.html">Link to projects</a>'
     ],
+    "skills" : ["I have techinal skills in HTML, Css , Javascript, C++ , Java and SQL. My softskills include Communication, Teamwork, Hard worker, willingness to learn"],
 
     "default": [
         "I'm not sure I understand that.",
         "Could you please rephrase?",
-        "Hmm, I don't quite understand."
+        "Hmm, I don't quite understand.",
+        "please contact Neo for more information at Tell : 083 281 6746 or email me at : neo.thobela@capaciti.org.za"
     ]
     
 };
@@ -59,7 +62,8 @@ const keywords = {
     "portfolio" : ["portfolio", "Tell me about the portfolio", "what is this ?", "what am i looking at?"],
     "bye": ["bye", "goodbye", "see you", "later", "talk to you soon", "farewell"],
     "projects":["projects","what projects have you worked on","show me your work","tell me more about your projects"],
-    "projects":["projects","what projects have you worked on","show me your work","tell me more about your skills"]
+    "skills":["skills","what are your skills","show me your skills","tell me more about your skills"],
+    "about":["tell me about yourself","about"]
     
 };
 

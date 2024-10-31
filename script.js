@@ -12,6 +12,7 @@ function showSidebar(){
 //display and hide chatbot
 function toggleChatbot() {
     const chatbot = document.getElementById("chatbot");
+    // chatbot.location.reload();
     chatbot.style.display = chatbot.style.display === "none" ? "flex" : "none";
 }
 // an array of responses from questions
@@ -38,11 +39,12 @@ const responses = {
     "portfolio" : [
         "This is Neo's portfolio , feel free to browse through",
     ],
-    "projects" : [ 'vist my Github to see my projects <a href="/index.html">My Github</a> OR you can see a gimpls on my portfolilo <a href="/index.html">Link to projects</a>'
+    "projects" : [ 'vist my Github to see my projects <a href="projects">My Github</a> OR you can see a gimpls on my portfolilo <a href="/index.html">Link to projects</a>'
     ],
     "skills" : ["I have techinal skills in HTML, Css , Javascript, C++ , Java and SQL. My softskills include Communication, Teamwork, Hard worker, willingness to learn"],
     "about": ["This is a portfolio about Neo Thobela, a BSC in computer science graduate from University of Limpopo, This website was built on CSS, HTML and Javascript. for more information feel free to browse through the portfolio "],
-"contact" : [   "please contact Neo for more information at Tell : 083 281 6746 or email me at : neo.thobela@capaciti.org.za"],
+    "contact" : [   "please contact Neo for more information at Tell : 083 281 6746 or email me at : neo.thobela@capaciti.org.za"],
+    "education" : ["I have a BSC in computer science and mathematical sciences, i majored in Computer science and statistics"],
     "default": [
         "I'm not sure I understand that.",
         "Could you please rephrase?",
@@ -63,7 +65,7 @@ const keywords = {
     "portfolio" : ["portfolio", "Tell me about the portfolio", "what is this ?", "what am i looking at?"],
     "bye": ["bye", "goodbye", "see you", "later", "talk to you soon", "farewell"],
     "projects":["projects","what projects have you worked on","show me your work","tell me more about your projects"],
-    "skills":["skills","what are your skills","show me your skills","tell me more about your skills"],
+    "skills":["skills","skill","what are your skills","show me your skills","tell me more about your skills"],
     "about":["tell me about yourself","about"],
     "contact" : ["contacts", "can i have your contact" , "contact", "get in touch"]
     
@@ -88,7 +90,7 @@ function sendMessage() {
 function addMessageToChatbox(sender, text) {
     const messageElement = document.createElement("div");
     messageElement.classList.add("message", sender === "user" ? "user-message" : "bot-message");
-    messageElement.innerHTML = text;
+    messageElement.innerHTML =  text;
     chatbox.appendChild(messageElement);
     chatbox.scrollTop = chatbox.scrollHeight; // Auto-scroll
 }
@@ -109,18 +111,7 @@ function generateResponse(userMessage) {
             break;
         }
     }
-    // for (const category in keywords) {
-    //     // Check if any keyword in the current category is included in the message
-    //     if (keywords[category].some(keyword => lowerCaseMessage.includes(keyword))) {
-    //         // If a keyword is found, set the foundResponse to the corresponding response
-    //         foundResponse = responses[category];
-    
-    //         // Log the category and keywords for debugging purposes
-    //         console.log("Category:", category, "Keywords:", keywords[category]);
-    //         break; // Exit the loop once a match is found
-    //         else if()
-    //     }
-    // }
+
     
     // Select a random response from the matching set of responses
     const response = foundResponse[Math.floor(Math.random() * foundResponse.length)];
@@ -136,3 +127,5 @@ userInput.addEventListener("keypress", function (event) {
         sendMessage();
     }
 });
+
+

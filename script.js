@@ -45,6 +45,7 @@ const responses = {
     "about": ["This is a portfolio about Neo Thobela, a BSC in computer science graduate from University of Limpopo, This website was built on CSS, HTML and Javascript. for more information feel free to browse through the portfolio "],
     "contact" : [   "please contact Neo for more information at Tell : 083 281 6746 or email me at : neo.thobela@capaciti.org.za"],
     "education" : ["I have a BSC in computer science and mathematical sciences, i majored in Computer science and statistics"],
+    "experience" : [" I have experience as a Technical Assistant, supporting practical lessons and enforcing lab rules. As a Lab Assistant, I contributed to software development, collaborating with senior engineers and engaging in continuous learning. Most recently, as an Associate Software Engineer, I educated clients on financial products and delivered exceptional service, currently trainig as a Cobol developer at capaciti"],
     "default": [
         "I'm not sure I understand that.",
         "Could you please rephrase?",
@@ -67,7 +68,9 @@ const keywords = {
     "projects":["projects","what projects have you worked on","show me your work","tell me more about your projects"],
     "skills":["skills","skill","what are your skills","show me your skills","tell me more about your skills"],
     "about":["tell me about yourself","about"],
-    "contact" : ["contacts", "can i have your contact" , "contact", "get in touch"]
+    "contact" : ["contacts", "can i have your contact" , "contact", "get in touch"],
+    "education" : ["education","background"],
+    "experience" : ["experience"]
     
 };
 

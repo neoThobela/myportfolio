@@ -1,0 +1,134 @@
+//show side bar
+function showSidebar(){
+    const sidebar = document.querySelector('.side-bar')
+    sidebar.style.display= 'flex'
+  }
+//hide side bar
+  function hideSidebar(){
+      const sidebar = document.querySelector('.side-bar')
+    sidebar.style.display= 'none'
+  }
+
+//display and hide chatbot
+function toggleChatbot() {
+    const chatbot = document.getElementById("chatbot");
+    // chatbot.location.reload();
+    chatbot.style.display = chatbot.style.display === "none" ? "flex" : "none";
+}
+// an array of responses from questions
+const responses = {
+    "greeting": [
+        "Hi there! How can I help you today?",
+        "Hello! Hope you're having a great day!",
+        "Hey! What's up?"
+    ],
+    "how are you": [
+        "I'm just a bot, but thanks for asking!",
+        "All systems go! How can I assist you?"
+    ],
+    "name": [
+        "I'm your friendly chatbot assistant!",
+        "You can call me ChatBot!",
+        "Just your virtual helper at your service!"
+    ],
+    "bye": [
+        "Goodbye! Have a great day!",
+        "See you later! Feel free to chat anytime.",
+        "Take care! I'll be here if you need me."
+    ],
+    "portfolio" : [
+        "This is Neo's portfolio , feel free to browse through",
+    ],
+    "projects" : [ 'vist my Github to see my projects <a href="projects">My Github</a> OR you can see a gimpls on my portfolilo <a href="/index.html">Link to projects</a>'
+    ],
+    "skills" : ["I have techinal skills in HTML, Css , Javascript, C++ , Java and SQL. My softskills include Communication, Teamwork, Hard worker, willingness to learn"],
+    "about": ["This is a portfolio about Neo Thobela, a BSC in computer science graduate from University of Limpopo, This website was built on CSS, HTML and Javascript. for more information feel free to browse through the portfolio "],
+    "contact" : [   "please contact Neo for more information at Tell : 083 281 6746 or email me at : neo.thobela@capaciti.org.za"],
+    "education" : ["I have a BSC in computer science and mathematical sciences, i majored in Computer science and statistics"],
+    "experience" : [" I have experience as a Technical Assistant, supporting practical lessons and enforcing lab rules. As a Lab Assistant, I contributed to software development, collaborating with senior engineers and engaging in continuous learning. Most recently, as an Associate Software Engineer, I educated clients on financial products and delivered exceptional service, currently trainig as a Cobol developer at capaciti"],
+    "default": [
+        "I'm not sure I understand that.",
+        "Could you please rephrase?",
+        "Hmm, I don't quite understand.",
+        "please contact Neo for more information at Tell: 083 281 6746 or email me at neo.thobela@capaciti.org.za"
+    ]
+    
+};
+
+
+
+// Keywords to match for each response category
+
+const keywords = {
+    "greeting": ["hello", "hi", "hey", "greetings", "sup", "good morning", "good afternoon", "good evening"],
+    "how are you": ["how are you", "how’s it going", "how’s everything", "how do you do"],
+    "name": ["your name", "who are you", "what are you called", "who am i talking to"],
+    "portfolio" : ["portfolio", "Tell me about the portfolio", "what is this ?", "what am i looking at?"],
+    "bye": ["bye", "goodbye", "see you", "later", "talk to you soon", "farewell"],
+    "projects":["projects","what projects have you worked on","show me your work","tell me more about your projects"],
+    "skills":["skills","skill","what are your skills","show me your skills","tell me more about your skills"],
+    "about":["tell me about yourself","about"],
+    "contact" : ["contacts", "can i have your contact" , "contact", "get in touch"],
+    "education" : ["education","background"],
+    "experience" : ["experience"]
+    
+};
+
+// Get chatbox and user input field
+const chatbox = document.getElementById("chatbox");
+const userInput = document.getElementById("userInput");
+
+// Send user message
+function sendMessage() {
+    const message = userInput.value.trim();
+    if (message) {
+        addMessageToChatbox("user", message);
+        generateResponse(message);
+        userInput.value = "";
+        console.log("message " + message)
+    }
+}
+
+// Add message to chatbox
+function addMessageToChatbox(sender, text) {
+    const messageElement = document.createElement("div");
+    messageElement.classList.add("message", sender === "user" ? "user-message" : "bot-message");
+    messageElement.innerHTML =  text;
+    chatbox.appendChild(messageElement);
+    chatbox.scrollTop = chatbox.scrollHeight; // Auto-scroll
+}
+
+
+// Generate bot response with keyword matching across categories
+function generateResponse(userMessage) {
+    const lowerCaseMessage = userMessage.toLowerCase();
+    let foundResponse = responses["default"];
+    console.log("foundResponse " + foundResponse);
+   // Check each category's keywords for a match in the user's message
+    for (const category in keywords) {
+        if (keywords[category].some(keyword => lowerCaseMessage.includes(keyword))) {
+            foundResponse = responses[category];
+            console.log(" category " + category 
+                +" keywords " 
+                + keywords[category])
+            break;
+        }
+    }
+
+    
+    // Select a random response from the matching set of responses
+    const response = foundResponse[Math.floor(Math.random() * foundResponse.length)];
+    
+    setTimeout(() => {
+        addMessageToChatbox("bot", response);
+    }, 500);
+}
+
+// Allow "Enter" key to send a message
+userInput.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        sendMessage();
+    }
+});
+
+

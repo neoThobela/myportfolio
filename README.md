@@ -21,6 +21,7 @@ Features
 Responsive Design: The website is mobile-friendly and adapts to different screen sizes.
 Project Gallery: Displays my projects, each with a description and github links.
 Contact Form: Allows visitors to send me messages directly from the site.
+chatbot: answers questions about the chatbot
 
 How to Run the Project Locally
 

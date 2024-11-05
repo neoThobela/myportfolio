@@ -2,8 +2,19 @@ body {
   background: #e8e7e3;
   font-family: "poppins";
   margin: 0;
+  scroll-behavior: smooth;
+}
+.fade-in {
+  opacity: 0; 
+  animation: fadeIn 3s forwards; 
+ 
 }
 
+@keyframes fadeIn {
+  to {
+      opacity: 1; 
+  }
+}
 .width70 {
   width: 70%;
 }
@@ -28,6 +39,7 @@ body {
   text-decoration: none;
   color: black;
   font-size: xx-large;
+  z-index: 1000;
 }
 
 .hamburger-btn {
@@ -49,11 +61,13 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 .navbar .contents {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 .navbar .logo {
   text-decoration: none;
@@ -61,6 +75,7 @@ body {
   font-family: "fira code";
   color: black;
   font-size: 20px;
+  z-index: 1000;
 }
 .navbar .logo span {
   color: #d24aff;
@@ -86,10 +101,19 @@ body {
   padding: 20px;
   margin: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
 }
 
-.expirence {
-  display: flex;
+.education:hover {
+  transform: scale(1.1);
+}
+
+.expirence  {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+  
 }
 
 h1 {
@@ -107,6 +131,7 @@ ul {
 
 .section1 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -246,6 +271,31 @@ input[type=text], input[type=email], .textarea {
 .imgSkills {
   border: black 1px;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+.img-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 533px;
+}
+.imageBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.imageAfter {
+  width: 0;
+  transition: 2s;
+  overflow: hidden;
+}
+.img-container:hover .imageAfter {
+  width: 100%;
+}
 
 .fa {
   color: white;
@@ -352,12 +402,6 @@ hr {
   font-family: "Monoton";
 }
 
-.expirence {
-  display: flex;
-  align-content: stretch;
-  justify-content: flex-end;
-}
-
 .width90 {
   width: 90%;
 }
@@ -381,7 +425,7 @@ hr {
   transition: transform 0.2s;
 }
 
-.image:hover { /* IE 9 */ /* Safari 3-8 */
+.image:hover { 
   transform: scale(1.5);
 }
 
@@ -397,7 +441,7 @@ hr {
   transition: transform 0.2s;
 }
 
-.card:hover { /* IE 9 */ /* Safari 3-8 */
+.card:hover { 
   transform: scale(1.1);
 }
 
@@ -406,13 +450,42 @@ hr {
   font-size: 18px;
 }
 
+.button {
+  display: flex;
+}
+
+.button-div {
+  margin-right: 66px;
+}
+
 a {
   text-decoration: none;
   font-size: 22px;
   color: black;
 }
 
-/* From Uiverse.io by ernestnash */
+.long-button-black {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin-left: -10px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+}
+
 .long-button {
   border: none;
   outline: 0;
@@ -492,129 +565,30 @@ a {
     display: block;
   }
 }
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
 
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.container::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
-  /* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-    left: 15px;
-  }
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
-}
-@media all and (max-width: 768px) {
+@media all and (max-width: 766px) {
   .width33 {
     width: 52%;
+  }
+  .section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 150vh;
+    padding-top: 78px;
+    flex-direction: column;
+}
+.center-page {
+  align-content: center;
+  height: 155vh;
+}
+  
+  .expirence {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
   }
   .projects-section {
     display: flex;
@@ -636,6 +610,60 @@ a {
   .width33 {
     width: 52%;
   }
+  .expirence {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 675px) {
+  .center-page {
+    height: 100%;
+  }
+  .expirence {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+  }
+  .section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 150vh;
+    padding-top: 78px;
+    flex-wrap: nowrap;
+  }
+  .expirence {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+  }
+  .button-div {
+    margin-right: 45px;
+  }
+  .exp-responsive {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .long-button {
+    width: 194px;
+    margin-bottom: 20px;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .no-width {
+    width: 75%;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
 }
 @media all and (max-width: 412px) {
   .section1 {
@@ -645,6 +673,11 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+  }
+  .expirence {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
   }
   .left-col {
     height: 47vh;
@@ -705,4 +738,145 @@ a {
   .hamburger-btn {
     padding-right: 30px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+.chatbot {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.chatbox {
+  height: 400px;
+  padding: 10px;
+  overflow-y: scroll;
+  border-bottom: 1px solid #ddd;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.user-message {
+  background-color: #d24aff;
+  align-self: flex-end;
+  color: #ffffff;
+}
+
+.bot-message {
+  background-color: #464545;
+  color: #ffffff;
+}
+
+.input-container {
+  display: flex;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-family: "poppins";
+}
+
+button {
+  width: 20%;
+  background-color: #d24aff;
+
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "poppins";
+} 
+
+  
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #d24aff;
+
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.chatbot {
+  position: fixed;
+  bottom: 70px; 
+  right: 30px;
+  border: 1px solid #ccc;
+  border-radius: 17px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatbox {
+  height: 350px;
+  overflow-y: auto;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+ 
+}
+
+.user-input {
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+  outline: none;
+ 
+}  
+
+.chat-header {
+  background-color: #d24aff;
+  background-image: linear-gradient(#8a185d, #d24aff);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+}
+
+.user-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.send-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #d24aff;
+   background-image: linear-gradient(#8a185d, #d24aff);
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}

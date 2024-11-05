@@ -19,41 +19,41 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       </head>
 <body>
+<!-- THE NAVIGATION BAR -->
+<div class="navbar ">
+       
+  <div class ="contents">
+    <a href="#"class="logo" id="myPortfolio">My<span>Portfolio</span></a>
+ 
+    
+    <ul class="side-bar">
+      <li onclick=hideSidebar()><i class="fa fa-times hamburger-btn" ></i></li>
 
+
+      <a href="#home"><li class="side-navitems">HOME</li></a>
+      <a href="#about"><li class="side-navitems">ABOUT</li></a>
+      <a href="#projects"><li class="side-navitems">PROJECT</li></a>
+      <a href="#skills"><li class="side-navitems">SKILLS</li></a>
+      <a href="#contacts"><li class="side-navitems">CONTACT</li></a>
+    </ul>
+
+    <ul class="nav-items">
+  
+      <a href="#home" class="hideOnMobile"><li >HOME</li></a>
+      <a href="#about" class="hideOnMobile"><li >ABOUT</li></a>
+      <a href="#projects" class="hideOnMobile"><li >PROJECTS</li></a>
+      <a href="#skills" class="hideOnMobile"><li >SKILLS</li></a>
+      <a href="#contacts" class="hideOnMobile"><li >CONTACT</li></a>
+    <a href="#" class="showOnMobile"> <li onclick=showSidebar()><i class="fa fa-bars hamburger-btn " ></i></li></a> 
+
+    </ul>
+  
+  </div>
+</div>
   <!-- THE MAIN DIV -->
-  <div class="main-container">
+  <div class="main-container fade-in">
 
-    <!-- THE NAVIGATION BAR -->
-    <div class="navbar ">
-       
-        <div class ="contents">
-          <a href="#"class="logo" id="myPortfolio">My<span>Portfolio</span></a>
-       
-          
-          <ul class="side-bar">
-            <li onclick=hideSidebar()><i class="fa fa-times hamburger-btn" ></i></li>
-
-
-            <a href="#home"><li class="side-navitems">HOME</li></a>
-            <a href="#about"><li class="side-navitems">ABOUT</li></a>
-            <a href="#projects"><li class="side-navitems">PROJECT</li></a>
-            <a href="#skills"><li class="side-navitems">SKILLS</li></a>
-            <a href="#contacts"><li class="side-navitems">CONTACT</li></a>
-          </ul>
-
-          <ul class="nav-items">
-        
-            <a href="#home" class="hideOnMobile"><li >HOME</li></a>
-            <a href="#about" class="hideOnMobile"><li >ABOUT</li></a>
-            <a href="#projects" class="hideOnMobile"><li >PROJECTS</li></a>
-            <a href="#skills" class="hideOnMobile"><li >SKILLS</li></a>
-            <a href="#contacts" class="hideOnMobile"><li >CONTACT</li></a>
-          <a href="#" class="showOnMobile"> <li onclick=showSidebar()><i class="fa fa-bars hamburger-btn " ></i></li></a> 
-
-          </ul>
-        
-        </div>
-      </div>
+    
       <!-- THE HOME PAGE -->
       <div class="homepage center-page" id="home">
 <div class="section1">
@@ -61,16 +61,18 @@
     <h1 > <span class='heading'> "HELLO WORLD" </span> I am<span class='heading'> console.log("NEO MBALI SIPHESIHLE THOBELA") </span>
     </h1>
     <h3 class="dev-section">SOFTWARE DEVELOPER & ARTIST </h3>
-    <div class="button width30">
-      <a href="#" class="long-button " download="cv/neo TCV.pdf.pdf">Download resume</a>
+    <div class="button ">
+      <div class="button-div">
+        <a href="#" class="long-button " download="cv/neo TCV.pdf.pdf">Download resume</a>
+
+      </div>
+  
     </div>
-    <!-- <div class="button">
-      <a href="#" class="primary-button" download="cv/neo TCV.pdf.pdf">Download resume</a>
-    </div> -->
+   
     </div>
     <div class="right-col">
 
-    <img src="images/profile picture.jpg" class="profilepicture" alt="profile picture">
+    <img src="images/mianpic.jpg" class="profilepicture" alt="profile picture">
   </div>
 </div>
       </div>
@@ -86,9 +88,6 @@
           Who is always willing to learn and grow. Possessing a foundation in statistical
           modeling and programming, I am eager to apply my skills.
          <br> Outside the world of code, you’ll find me embracing my artistic side. I paint and draw in my spare time, bringing the same level of focus and imagination to my artwork as I do to my tech projects. This blend of technical expertise and artistic flair drives my unique approach to everything I do.</p>
-         <!-- <p>Over the course of my career, I’ve had the opportunity to gain diverse experiences across different fields. As a Lab Assistant at university, I supported students and professors by troubleshooting technical issues, preparing materials for labs, and ensuring smooth operations during practical sessions. My role as an Associate Software Engineer allowed me to dive deep into software development, where I worked on developing, debugging, and optimizing applications, collaborating with teams to deliver high-quality solutions. Additionally, my time as a Financial Advisor helped me hone my analytical skills, advising clients on financial planning and investment strategies while managing key client relationships. These roles have equipped me with a well-rounded skill set, combining technical expertise, problem-solving, and client-focused communication.
-          Currently i am at Capacti training to be a COBOL developer for ABSA.
-         </p> -->
 
         </div>
          
@@ -191,7 +190,7 @@
       <div class="projects-section width90" id="projects">
         
       
-     <div class="  width100">
+     <div class="  width100 exp-responsive">
       <h1 class="heading60px width30 Courier-Prime ">[/> PROJECTS</h1>
       <h2>/ Take a look at some of my work .</h2>
 
@@ -229,8 +228,8 @@
           <div class="contact width60 boarderradius20px">
      <h1 class="white-font Courier-Prime">[/> SAY HI!<span style='font-size:40px;'>&#128512;</span>
 </h1>
-     <form action=""  class="contact">
-      <div >
+     <form action="" class="contact">
+      <div  >
 
       <label for="name" class="white-font">Name</label>
       <input type="text"id="name"  placeholder="Name..." name="name">
@@ -238,11 +237,11 @@
       <input type="email"id="email" placeholder="Email..." name="email">
       <label for="number" class="white-font">Mobile Number</label>
       <input type="text"id="number" placeholder="Mobile Number..."name="number">
-<label for="message" class="white-font firacode" >Message</label>
-<textarea name="message" class="textarea firacode" id="message"placeholder="Enter a message..." ></textarea>
+<label for="message" class="white-font " >Message</label>
+<textarea name="message" class="textarea poppins" id="message"placeholder="Enter a message..." ></textarea>
 
       </div>
-<div class="width30">
+<div class="width30 no-width">
   <a href="#" class="long-button poppins">SUMBIT</a>
 </div>
 
@@ -251,6 +250,24 @@
         </div>
       </div>
       <footer>
+        <div id="chat-icon" class="chat-icon" onclick="toggleChatbot()">
+          💬
+      </div>
+      
+        <div id="chatbot" class="chatbot" style="display: none;">
+          <div class="chat-header">
+           
+              <h3>🤖 Chat with Me !</h3>
+              <span class="close-btn" onclick="toggleChatbot()">✖</span>
+          </div>
+          <div id="chatbox" class="chatbox"></div>
+          <div class="input-container">
+              <input type="text" id="userInput" class="user-input" placeholder="Type a message...">
+              <button id="sendButton" class="send-button" onclick="sendMessage()">Send</button>
+          </div>
+      </div>
+      
+      
         <div class="footerCenter">
        <div class="footer">
         <p>&copy; Developed by NMST (2024). all rights reserved | 0832816746 | neo.thobela@capacti.org.za</p>
@@ -270,16 +287,8 @@
 
     </div>
     <!-- side nav -->
-    <script>
-      function showSidebar(){
-        const sidebar = document.querySelector('.side-bar')
-        sidebar.style.display= 'flex'
-      }
-
-      function hideSidebar(){
-          const sidebar = document.querySelector('.side-bar')
-        sidebar.style.display= 'none'
-      }
+    <script src="script.js">
+      
     </script>
 </body>
 </html>

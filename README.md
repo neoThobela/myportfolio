@@ -44,7 +44,7 @@ Run the following command if you have a preferred browser:
 open index.html  # macOS
 start index.html  # Windows
 Live Demo
-You can also check out the live version of the portfolio here: https://neoThobela.github.io/myportfolio.
+You can also check out the live version of the portfolio here: https://myportfolio-5ozw.onrender.com/
 
 Contact
 If you have any feedback or want to reach out, feel free to contact me:

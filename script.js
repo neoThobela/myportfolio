@@ -15,6 +15,19 @@ function toggleChatbot() {
     // chatbot.location.reload();
     chatbot.style.display = chatbot.style.display === "none" ? "flex" : "none";
 }
+
+var typingEffect = new Typed(".typed-text", {
+    strings: [
+      "Full Stack Developer",
+      "Cloud Administrator",
+      "Cyber Security Analyst",
+    ],
+    loop: true,
+    typeSpeed: 60,
+    backSpeed: 80,
+    backDelay: 2000,
+  });
+
 // an array of responses from questions
 const responses = {
     "greeting": [

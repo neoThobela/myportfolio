@@ -428,7 +428,30 @@ hr {
 .image:hover { 
   transform: scale(1.5);
 }
+.profilepicture {
+  margin: auto 0;
+  width: 100%; /* Makes the image responsive */
+  max-width: 400px; /* Maximum width */
+  border-radius: 5%;
+  overflow: hidden;
+  animation: imgFloat 2.2s ease-in-out infinite;
+}
 
+
+.profilepicture img {
+  width: 100%; /* Adjusted for responsiveness */
+  max-width: 100%; /* Ensures the image doesn't exceed the container's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+
+@keyframes imgFloat {
+  50% {
+    transform: translateY(10px);
+    border-radius: 5%
+  }
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;

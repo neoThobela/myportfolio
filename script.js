@@ -8,6 +8,22 @@ function showSidebar(){
       const sidebar = document.querySelector('.side-bar')
     sidebar.style.display= 'none'
   }
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const timelineItems = document.querySelectorAll(".timeline-item");
+
+    const revealOnScroll = () => {
+        timelineItems.forEach((item) => {
+            const itemTop = item.getBoundingClientRect().top;
+            if (itemTop < window.innerHeight - 50) {
+                item.classList.add("show");
+            }
+        });
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll(); // Run on page load
+});
 
 //display and hide chatbot
 function toggleChatbot() {
@@ -18,15 +34,142 @@ function toggleChatbot() {
 
 var typingEffect = new Typed(".typed-text", {
     strings: [
-      "Full Stack Developer",
-      "Cloud Administrator",
-      "Cyber Security Analyst",
+      "Software Engineer",
+      "Cobol Mainframe Developer"
+      
     ],
     loop: true,
     typeSpeed: 60,
     backSpeed: 80,
     backDelay: 2000,
   });
+
+  //game
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM fully loaded. Ready to start the Snake Game...");
+
+    const canvas = document.getElementById("snakeCanvas");
+
+    if (!canvas) {
+        console.error("Canvas element not found!");
+        return;
+    }
+
+    const ctx = canvas.getContext("2d");
+
+    if (!ctx) {
+        console.error("Canvas rendering context not found!");
+        return;
+    }
+
+    canvas.width = 300;
+    canvas.height = 300;
+    const box = 20;
+
+    let snake = [{ x: 10 * box, y: 10 * box }];
+    let direction = "RIGHT";
+    let food = generateFood();
+    let gameInterval = null;
+    let gameOver = false;
+    let gameStarted = false;
+    let gameSpeed = 200; // Slower speed (increase from 100ms to 200ms)
+
+    function generateFood() {
+        return {
+            x: Math.floor(Math.random() * (canvas.width / box)) * box,
+            y: Math.floor(Math.random() * (canvas.height / box)) * box
+        };
+    }
+
+    function drawGame() {
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        if (!gameStarted) {
+            ctx.fillStyle = "white";
+            ctx.font = "20px Arial";
+            ctx.textAlign = "center";
+            ctx.fillText("Press ENTER to Start", canvas.width / 2, canvas.height / 2);
+            return;
+        }
+
+        if (gameOver) {
+            ctx.fillStyle = "red";
+            ctx.font = "30px Arial";
+            ctx.textAlign = "center";
+            ctx.fillText("Game Over!", canvas.width / 2, canvas.height / 2);
+            ctx.font = "20px Arial";
+            ctx.fillText("Press ENTER to Restart", canvas.width / 2, canvas.height / 2 + 40);
+            return;
+        }
+
+        ctx.fillStyle = "red";
+        ctx.fillRect(food.x, food.y, box, box);
+
+        ctx.fillStyle = "lime";
+        snake.forEach(segment => ctx.fillRect(segment.x, segment.y, box, box));
+
+        let headX = snake[0].x;
+        let headY = snake[0].y;
+
+        if (direction === "LEFT") headX -= box;
+        if (direction === "RIGHT") headX += box;
+        if (direction === "UP") headY -= box;
+        if (direction === "DOWN") headY += box;
+
+        if (headX === food.x && headY === food.y) {
+            food = generateFood();
+        } else {
+            snake.pop();
+        }
+
+        let newHead = { x: headX, y: headY };
+
+        if (
+            headX < 0 || headY < 0 ||
+            headX >= canvas.width || headY >= canvas.height ||
+            snake.some(segment => segment.x === newHead.x && segment.y === newHead.y)
+        ) {
+            gameOver = true;
+            clearInterval(gameInterval);
+            drawGame();
+            return;
+        }
+
+        snake.unshift(newHead);
+    }
+
+    function changeDirection(event) {
+        const key = event.keyCode;
+        if (key === 37 && direction !== "RIGHT") direction = "LEFT";
+        if (key === 38 && direction !== "DOWN") direction = "UP";
+        if (key === 39 && direction !== "LEFT") direction = "RIGHT";
+        if (key === 40 && direction !== "UP") direction = "DOWN";
+    }
+
+    function startGame() {
+        if (!gameStarted || gameOver) {
+            gameStarted = true;
+            gameOver = false;
+            snake = [{ x: 10 * box, y: 10 * box }];
+            direction = "RIGHT";
+            food = generateFood();
+            clearInterval(gameInterval); // Clear previous interval
+            gameInterval = setInterval(drawGame, gameSpeed); // Use slower speed
+        }
+    }
+
+    document.addEventListener("keydown", function (event) {
+        if (event.keyCode === 13) startGame(); // Press "Enter" to start/restart
+        changeDirection(event);
+    });
+
+    drawGame(); // Initial screen with "Press Enter to Start"
+});
+
+
+
+  //end code game
 
 // an array of responses from questions
 const responses = {
@@ -143,5 +286,8 @@ userInput.addEventListener("keypress", function (event) {
         sendMessage();
     }
 });
+
+
+
 
 

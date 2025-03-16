@@ -25,6 +25,14 @@ function showSidebar(){
     revealOnScroll(); // Run on page load
 });
 
+   // Trigger animation on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillFills = document.querySelectorAll('.skill-fill');
+            skillFills.forEach(fill => {
+                fill.classList.add('animate');
+            });
+        });
+
 //display and hide chatbot
 function toggleChatbot() {
     const chatbot = document.getElementById("chatbot");

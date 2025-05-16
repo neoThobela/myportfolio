@@ -94,7 +94,7 @@ body {
 
 .navbar .nav-items a li {
   display: inline-block;
-  padding-right: 1em;
+  padding-right: 2em;
   color: black;
 }
 
@@ -451,7 +451,7 @@ hr {
 .profilepicture {
   margin: 10px 0 0 0;
   width: 100%; /* Makes the image responsive */
-  max-width: 320px;
+  max-width: 380px;
   border-radius: 10%;
   overflow: hidden;
   animation: imgFloat 6.2s ease-in-out infinite;

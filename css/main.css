@@ -91,6 +91,7 @@ body {
   color: #b546da;
   font-weight: bold;
 }
+
 .navbar .nav-items a li {
   display: inline-block;
   padding-right: 1em;
@@ -120,7 +121,7 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 45px;
 }
 
 ul {
@@ -133,6 +134,7 @@ ul {
 }
 
 .section1 {
+  width: 96%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -142,16 +144,27 @@ ul {
 .left-col {
   width: 60%;
 }
-
+.padding30px{
+  padding: 30px;
+}
+.flexcenter{
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
 .paddingbottom50px {
   padding-bottom: 50px;
 }
-
+.padddingtop30{
+  padding-top: 30px;
+}
 .heading {
   color: #b546da;
-  font-size: 33px;
+  font-size: 40px;
 }
-
+.font38{
+  font-size: 38px;
+}
 .vt323 {
   font-family: "VT323";
 }
@@ -190,7 +203,9 @@ ul {
   text-align: center;
   flex-wrap: wrap;
 }
-
+.codecolor{
+  color: #b546da;
+}
 .socials {
   display: flex;
   flex-direction: row;
@@ -348,7 +363,7 @@ body {
 
 .contact-me {
   margin-bottom: 20px;
-  background-image: url('/images/Art\ Warehouse\ in\ Boeotia\ by\ A31\ Architecture\ \(1\).jfif');
+  background-image: url('/myportfolio/images/Art\ Warehouse\ in\ Boeotia\ by\ A31\ Architecture\ \(1\).jfif');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

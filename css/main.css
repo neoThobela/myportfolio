@@ -227,7 +227,7 @@ i:hover {
 
 .skillsname {
   font-size: 22px;
-  font-family: "Fira Code" !important;
+ 
 }
 
 footer {
@@ -363,7 +363,7 @@ body {
 
 .contact-me {
   margin-bottom: 20px;
-  background-image: url('/myportfolio/images/Art\ Warehouse\ in\ Boeotia\ by\ A31\ Architecture\ \(1\).jfif');
+  background-image: url('/images/Art\ Warehouse\ in\ Boeotia\ by\ A31\ Architecture\ \(1\).jfif');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -377,7 +377,9 @@ hr {
 .width60 {
   width: 60%;
 }
-
+.bracketcolor{
+  color:#b5cf31;
+}
 .white-font {
   color: white;
 }
@@ -545,7 +547,7 @@ h4 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   color: #555;
 }
 

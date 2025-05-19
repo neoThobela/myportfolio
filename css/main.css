@@ -268,7 +268,7 @@ input[type=text], input[type=email], .textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-family: "fira code";
+
 }
 
 .aboutMe {
@@ -937,7 +937,9 @@ button {
   font-family: "poppins";
 } 
 
-  
+  .poppins{
+     font-family: "poppins"!important;
+  }
 .chat-icon {
   position: fixed;
   bottom: 20px;

@@ -203,7 +203,7 @@ const responses = {
     "portfolio" : [
         "This is Neo's portfolio , feel free to browse through",
     ],
-    "projects" : [ 'vist my Github to see my projects <a href="projects">My Github</a> OR you can see a gimpls on my portfolilo <a href="/index.html">Link to projects</a>'
+    "projects" : [ 'vist my Github to see my projects on My Github OR you can see a gimpls on my portfolilo projects</a>'
     ],
     "skills" : ["I have techinal skills in HTML, Css , Javascript, C++ , Java and SQL. My softskills include Communication, Teamwork, Hard worker, willingness to learn"],
     "about": ["This is a portfolio about Neo Thobela, a BSC in computer science graduate from University of Limpopo, This website was built on CSS, HTML and Javascript. for more information feel free to browse through the portfolio "],

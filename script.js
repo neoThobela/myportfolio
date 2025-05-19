@@ -42,8 +42,8 @@ function toggleChatbot() {
 
 var typingEffect = new Typed(".typed-text", {
     strings: [
-      "Software Engineer",
-      "Cobol Mainframe Developer"
+      "[/> Software Engineer",
+      "[/> Cobol Mainframe Developer"
       
     ],
     loop: true,

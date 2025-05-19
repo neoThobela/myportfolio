@@ -71,7 +71,7 @@
     </h3>
     <div class="button ">
       <div class="button-div">
-        <a href="./cv/neo TCV.pdf.pdf" class="long-button " download="./cv/neo TCV.pdf.pdf">Download resume</a>
+        <a href="#" class="long-button " download="cv/neo TCV.pdf">Download resume</a>
 
       </div>
   
@@ -91,20 +91,12 @@
 <div class="purple-line "></div>
 
      <div class="flexcenter">
-      <div class="center">
-
-      
-<p class="poppins padddingtop30">
-I’m from Standerton, Mpumalanga — a small town where “Hello, World!” felt galaxies away. Little did I know, I was called to Computer Science. In fact, CS chose me — and boy, am I glad it did and I graduated with a BSc in Computer Science and Mathematical Sciences from the University of Limpopo.
-  <br></br>  
-  Since then, I’ve worn more hats than a `switch` statement — Lab Assistant, Software Associate Engineer, even Fashion Designer and Financial Advisor (talk about style and cents!). Whether I’m designing clean code or clean seams, I’m all about detail.
-  <br></br>
-   These days, I’m decoding the past while supporting the future — diving deep into legacy systems with COBOL and mainframe support at ABSA. I aspire to speak fluent JCL, keep jobs running smoothly, and if there’s a bug in the system? Consider it squashed — debugging is my superpower.
-  <br></br>
-  Through every version update of my life, one thing stays constant: I’m a creative coder who loves blending logic with imagination. Whether it's fixing a broken program or piecing together a new project, I always commit — with no rollback.
-</p>
-</div>  
-<div class="padding30px">
+ <p class=" poppins  padddingtop30" >I am a passionate and detail-oriented graduate with a BSC Degree in
+          Computer Science and mathematical sciences from University of Limpopo.
+          Who is always willing to learn and grow. Possessing a foundation in statistical
+          modeling and programming, I am eager to apply my skills.
+         <br> Outside the world of code, you’ll find me embracing my artistic side. I paint and draw in my spare time, bringing the same level of focus and imagination to my artwork as I do to my tech projects. This blend of technical expertise and artistic flair drives my unique approach to everything I do.</p>
+   <div class="padding30px">
   <section class="journey-section" style="    font-family: monospace;
     background:#1a1818;
     color: #ececec;
@@ -117,27 +109,26 @@ I’m from Standerton, Mpumalanga — a small town where “Hello, World!” fel
 ">
   <h2 style="color: #b546da;">💻 My Career Journey</h2>
   <pre><code>
-<span class="codecolor">function</span> careerJourney<span class="bracketcolor">()</span> <span class="bracketcolor">{</span>
+<span class="codecolor">function</span> careerJourney() {
   <span class="codecolor">const</span> origin = "Standerton, Mpumalanga";
-  <span class="codecolor">const</span> education = "BSc in Computer Science & Mathematical Sciences
-                                – University of Limpopo";
+  <span class="codecolor">const</span> education = "BSc in Computer Science & Mathematical Sciences – University of Limpopo";
 
-  <span class="codecolor">const</span> career = <span class="bracketcolor">[</span>
-   <span>"Lab Assistant (2019) - Worked as a lab assistant part-time whilst in University ",
+  <span class="codecolor">const</span> career = [
+    "Lab Assistant (2019) - Worked as a lab assistant part-time whilst in University ",
     "Software Associate Engineer(2022 - 2023) - building sleek front-end interfaces",
     "Fashion Design Certificate (2023) - stitched creativity into reality",
     "Financial Advisor (2024) - worked with long term insurence and finavial planning",
-    "COBOL DevOps Trainee (2024 - CURENT) - mastering mainframe and COBOL magic "</span> 
- <span class="bracketcolor">]</span> ;
+    "COBOL DevOps Trainee (2024 - CURENT) - mastering mainframe and COBOL magic "
+  ];
 
-  return <span class="bracketcolor">{</span>
+  return {
     origin,
     education,
     career
- <span class="bracketcolor">}</span> ;
-<span class="bracketcolor">}</span>
+  };
+}
 
-<span class="codecolor">console.log</span>(careerJourney<span class="bracketcolor">()</span>);
+<span class="codecolor">console.log</span>(careerJourney());
   </code></pre>
 </section>
    </div>
@@ -150,7 +141,62 @@ I’m from Standerton, Mpumalanga — a small town where “Hello, World!” fel
 
 
     
+    <!-- <h2 class="title">My Journey</h2>
     
+    <div class="timeline">
+        <div class="timeline-item">
+           <img class="padding1em"  width="48" height="48" src="https://img.icons8.com/color/48/graduation-cap.png" alt="graduation-cap"/>
+            <div class="content">
+                <h3>2018-2021</h3>
+                <h4>University Studies</h4>
+                <p>Earned my BSc in Computer Science and Mathematical Science.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+          <img class="padding1em"  width="48" height="48" src="https://img.icons8.com/color/48/office.png" alt="office"/>
+          <div class="content">
+              <h3>2020</h3>
+              <h4>LAB ASSISTANT</h4>
+              <p>Worked as a lab assistant part-time whilst in the University of Limpopo.</p>
+          </div>
+      </div>
+        <div class="timeline-item">
+          <img class="padding1em"  width="48" height="48" src="https://img.icons8.com/color/48/permanent-job.png" alt="permanent-job"/>
+            <div class="content">
+                <h3>2022</h3>
+                <h4>Software Associate Engineer</h4>
+                <p>Worked as a front-end developer specializing in Angular & JavaScript.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+          <img class="padding1em"  width="64" height="64" src="https://img.icons8.com/external-itim2101-flat-itim2101/64/external-benefits-project-management-itim2101-flat-itim2101.png" alt="external-benefits-project-management-itim2101-flat-itim2101"/>
+            <div class="content">
+                <h3>2023</h3>
+                <h4>Financial Advisor</h4>
+                <p>Explored finance, helping clients with investments and insurance.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+          <img class="padding1em"  width="64" height="64" src="https://img.icons8.com/dusk/64/paint.png" alt="paint"/>
+            <div class="content">
+                <h3>2023</h3>
+                <h4>Creative Journey</h4>
+                <p>Explored my passion for sewing and painting, bringing creativity to life.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+          <img class="padding1em"  width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-career-seo-flaticons-lineal-color-flat-icons.png" alt="external-career-seo-flaticons-lineal-color-flat-icons"/>
+            <div class="content">
+                <h3>2024</h3>
+                <h4>COBOL DEVELOPER INTERN</h4>
+                <p>Joined Capaciti’s APSA COBOL program, sharpening my software skills again.</p>
+            </div>
+        </div>
+    </div> -->
+
       <div class="skills background-color-white " >
         <h1 class="skillsHeading Courier-Prime " id="skills">
          [/> My Skills
@@ -165,76 +211,76 @@ I’m from Standerton, Mpumalanga — a small town where “Hello, World!” fel
            
             <li class=" image">
               <div class="padding1em">
-                <img width="75" height="75" src="https://img.icons8.com/color/75/javascript--v1.png" alt="javascript--v1"/>          
+                <img width="96" height="96" src="https://img.icons8.com/color/96/javascript--v1.png" alt="javascript--v1"/>          
                   <div class="skillsname poppins">JAVASCRIPT</div>
             
                 </div></li>
             <li class=" image">
               <div class="padding1em">
-                <img width="75" height="75" src="https://img.icons8.com/color/75/css3.png" alt="css3"/>
+                <img width="96" height="96" src="https://img.icons8.com/color/96/css3.png" alt="css3"/>
                 <div class="skillsname poppins">CSS</div>
             
                 </div></li>
                 <li class=" image">
                   <div class="padding1em">
-                    <img width="75" height="75" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/75/external-sass-a-style-sheet-professional-grade-css-extension-language-logo-shadow-tal-revivo.png" alt="external-sass-a-style-sheet-professional-grade-css-extension-language-logo-shadow-tal-revivo"/>  
+                    <img width="96" height="96" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-sass-a-style-sheet-professional-grade-css-extension-language-logo-shadow-tal-revivo.png" alt="external-sass-a-style-sheet-professional-grade-css-extension-language-logo-shadow-tal-revivo"/>  
                     <div class="skillsname poppins">SASS</div>              
                     </div></li>
                 <li class=" image">
                   <div class="padding1em">
-                    <img width="75" height="75" src="https://img.icons8.com/color/75/html-5--v1.png" alt="html-5--v1"/>
+                    <img width="96" height="96" src="https://img.icons8.com/color/96/html-5--v1.png" alt="html-5--v1"/>
                     
                 <div class="skillsname poppins">HTML</div>
                 
                     </div></li>
                     <li class=" image">
                       <div class="padding1em">
-                        <img width="75" height="75" src="https://img.icons8.com/fluency/75/sql.png" alt="sql"/>                        
+                        <img width="96" height="96" src="https://img.icons8.com/fluency/96/sql.png" alt="sql"/>                        
                     <div class="skillsname poppins">SQL</div>
                     
                         </div></li>
             <li class=" image">
               <div class="padding1em ">
-                <img width="75" height="75" src="https://img.icons8.com/color/75/mongodb.png" alt="mongodb"/>                
+                <img width="96" height="96" src="https://img.icons8.com/color/96/mongodb.png" alt="mongodb"/>                
             <div class="skillsname">MONGODB</div>
           </div></li>
           <li class=" image">
              <div class="padding1em">
-              <img width="75" height="75" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/75/external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-shadow-tal-revivo.png" alt="external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-shadow-tal-revivo"/>  
+              <img width="96" height="96" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-shadow-tal-revivo.png" alt="external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-shadow-tal-revivo"/>  
               <div class="skillsname poppins">TYPE SCRIPT</div>
                </div></li>
             
                 
            <li class=" image">
               <div class="padding1em">
-                <img width="75" height="75" src="https://img.icons8.com/color/75/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>                
+                <img width="96" height="96" src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>                
             <div class="skillsname poppins">C++</div>
             
                 </div></li>
                 <li class=" image">
                   <div class="padding1em">
-                    <img width="75" height="75" src="https://img.icons8.com/fluency/75/angularjs.png" alt="angularjs"/>         
+                    <img width="96" height="96" src="https://img.icons8.com/fluency/96/angularjs.png" alt="angularjs"/>         
                      <div class="skillsname poppins">ANGULAR</div>
                 
                     </div></li>
                     <li class=" image">
                       <div class="padding1em">
-                        <img width="75" height="75" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/75/external-react-a-javascript-library-for-building-user-interfaces-logo-shadow-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-shadow-tal-revivo"/>
+                        <img width="96" height="96" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-react-a-javascript-library-for-building-user-interfaces-logo-shadow-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-shadow-tal-revivo"/>
                         <div class="skillsname poppins">REACT</div>
                         </div></li>
                         <li class=" image">
                           <div class="padding1em">
-                            <img width="75" height="75" src="https://img.icons8.com/color/75/git.png" alt="git"/>  
+                            <img width="96" height="96" src="https://img.icons8.com/color/96/git.png" alt="git"/>  
                             <div class="skillsname poppins">GIT</div>                      
                             </div></li>
               </div>
           </ul>
          
-<h2 class="skillsHeading Courier-Prime " id="skills">
+
+      </div>
+      <h2 class="skillsHeading Courier-Prime " id="skills">
         / Soft Skills
        </h2>
-      </div>
-      
       <div class="skills-container">
         <div class="skill">
             <div class="skill-info">
@@ -268,7 +314,7 @@ I’m from Standerton, Mpumalanga — a small town where “Hello, World!” fel
 
         <div class="skill">
             <div class="skill-info">
-                <span class="skill-name">Attention to detail</span>
+                <span class="skill-name">Time Management</span>
                 <span class="skill-percent">82%</span>
             </div>
             <div class="skill-bar">
@@ -289,47 +335,47 @@ I’m from Standerton, Mpumalanga — a small town where “Hello, World!” fel
           
           <p class="title">2025</p>
           <p>cobol software development processes</p>
-          <a href="./images/certi1.png" class="long-button" target="_blank">See certificate</a>
+          <a href="https://coursera.org/share/0268e23ae4b6493555a77211104128c8" class="long-button">See certificate</a>
         </div>
         <div class="card-certificate  margin1em">
           <img src="./images/cert2.PNG" alt="art gallery photo" style="width:300px; height:200px; background-color: white;">
          
           <p class="title">2025</p>
           <p>IBM COBOL Data and file Management</p>
-          <a href="./images/cert2.PNG" class="long-button" target="_blank">See certificate</a>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/XQLMMQR4H6WX" class="long-button">See certificate</a>
         </div>
         <div class="card-certificate  margin1em">
           <img src="./images/cert3.PNG" alt="art gallery photo" style="width:300px; height:200px; background-color: white;">
           
           <p class="title">2025</p>
           <p>IBM COBOL Core</p>
-          <a href="./images/cert3.PNG" class="long-button" target="_blank">See certificate</a>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/XQLMMQR4H6WX" class="long-button">See certificate</a>
         </div>
         <div class="card-certificate  margin1em">
           <img src="./images/cert4.PNG" alt="art gallery photo" style="width:300px; height:200px; background-color: white;">
           
           <p class="title">2025</p>
           <p>IMB COBOL Basics</p>
-          <a href="./images/cert4.PNG" class="long-button" target="_blank">See certificate</a>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/XQLMMQR4H6WX" class="long-button">See certificate</a>
         </div>
         <div class="card-certificate  margin1em">
           <img src="./images/cert5.PNG" alt="art gallery photo" style="width:300px; height:200px; background-color: white;">
         
           <p class="title">2025</p>
           <p>Hands-on Introduction to Linux Commands and Shell Scripting</p>
-          <a href="./images/cert5.PNG" class="long-button"target="_blank">See certificate</a>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/XQLMMQR4H6WX" class="long-button">See certificate</a>
         </div> 
         <div class="card-certificate  margin1em">
           <img src="./images/Capture.PNG" alt="art gallery photo" style="width:300px; height:200px; background-color: white;">
         
           <p class="title">2025</p>
           <p>COBOL Programming with VSCode</p>
-          <a href="./images/Capture.PNG" class="long-button"target="_blank">See certificate</a>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/XQLMMQR4H6WX" class="long-button">See certificate</a>
         </div>
              </div>
              </div>
 
-     <div class="  width90 exp-responsive" id="projects">
+     <div class="  width90 exp-responsive">
       <h1 class="heading60px width30 Courier-Prime ">[/> PROJECTS</h1>
       <div class="purple-line "></div>
       <h2>/ Take a look at some of my work .</h2>
@@ -346,13 +392,13 @@ I’m from Standerton, Mpumalanga — a small town where “Hello, World!” fel
   <a href="https://github.com/neoThobela/myportfolio" class="long-button">See My Work</a>
 </div>
 <div class="card">
-  <img src="./images/movieApp.png" alt="art gallery photo" style="width:100%; height:250px; background-color: white;">
-  <h2 class="project-heading">MOVIE APP.</h2>
-  <p class="title">2025</p>
-  <p class="marginbottom45px"style ="height:130px">🎬 Movie Explorer App — A dynamic and responsive movie web app built with React. It fetches real-time data from a public movie API to display trending films, genres, and movie details. Users can scroll through featured titles, explore by genre, and dive into movie info with a smooth, modern UI.
-
-🛠️ Tech used: React, JavaScript, HTML, CSS, REST API</p>
-  <a href="https://movieappth-1.onrender.com/" class="long-button">See My Work</a>
+  <img src="./images/ART.webp" alt="art gallery photo" style="width:100%; height:250px; background-color: white;">
+  <h2 class="project-heading">ART APP.</h2>
+  <p class="title">2022</p>
+  <p class="marginbottom45px"style ="height:130px">A visually engaging web app that showcases artwork in a sleek, scrollable gallery. Users can view featured pieces, filter by category, and enjoy a smooth, aesthetic browsing experience.
+<br></br>
+🛠️ Tech used: Angular, HTML, CSS, JavaScript</p>
+  <a href="https://github.com/neoThobela/artApp" class="long-button">See My Work</a>
 </div>
 <div class="card">
   <img src="./images/covid19.png" alt="John" style="width:100%; height:250px">
@@ -375,40 +421,36 @@ I’m from Standerton, Mpumalanga — a small town where “Hello, World!” fel
           <div class="contact width60 boarderradius20px">
      <h1 class="white-font Courier-Prime">[/> SAY HI!<span style='font-size:40px;'>&#128512;</span>
 </h1>
-     <form  action="https://formspree.io/f/xanoknpo"
-  method="POST" class="contact">
+     <form action="" class="contact">
       <div  >
 
       <label for="name" class="white-font">Name</label>
       <input type="text"id="name"  placeholder="Name..." name="name">
-      <label for="email" class="white-font poppins">Email Address</label>
-      <input type="email"id="email"class="poppins" placeholder="Email..." name="email">
+      <label for="email" class="white-font">Email Address</label>
+      <input type="email"id="email" placeholder="Email..." name="email">
       <label for="number" class="white-font">Mobile Number</label>
-      <input type="text"id="number" class="poppins" placeholder="Mobile Number..."name="number">
-<label for="message" class="white-font" >Message</label>
+      <input type="text"id="number" placeholder="Mobile Number..."name="number">
+<label for="message" class="white-font " >Message</label>
 <textarea name="message" class="textarea poppins" id="message"placeholder="Enter a message..." ></textarea>
 
       </div>
 <div class="width30 no-width">
-  <button type="submit"  class="long-button poppins">Send</button>
- 
+  <a href="#" class="long-button poppins">SUMBIT</a>
 </div>
 
 
 
 
 </form>
-<!-- modify this form HTML and place wherever you want your form -->
-
 </div>
           </div>
         </div>
       </div>
-      <!-- <div class="game-container">
+      <div class="game-container">
         <h2>/ Snake Game</h2>
         <canvas id="snakeCanvas"></canvas>
         <p>Use arrow keys to control the snake.</p>
-    </div> -->
+    </div>
     
       <footer>
         <div id="chat-icon" class="chat-icon" onclick="toggleChatbot()">
@@ -451,5 +493,43 @@ I’m from Standerton, Mpumalanga — a small town where “Hello, World!” fel
     <script src="script.js">
       
     </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>

@@ -91,9 +91,10 @@ body {
   color: #b546da;
   font-weight: bold;
 }
+
 .navbar .nav-items a li {
   display: inline-block;
-  padding-right: 1em;
+  padding-right: 2em;
   color: black;
 }
 
@@ -120,7 +121,7 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 45px;
 }
 
 ul {
@@ -133,6 +134,7 @@ ul {
 }
 
 .section1 {
+  width: 96%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -142,16 +144,27 @@ ul {
 .left-col {
   width: 60%;
 }
-
+.padding30px{
+  padding: 30px;
+}
+.flexcenter{
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
 .paddingbottom50px {
   padding-bottom: 50px;
 }
-
+.padddingtop30{
+  padding-top: 30px;
+}
 .heading {
   color: #b546da;
-  font-size: 33px;
+  font-size: 40px;
 }
-
+.font38{
+  font-size: 38px;
+}
 .vt323 {
   font-family: "VT323";
 }
@@ -190,7 +203,9 @@ ul {
   text-align: center;
   flex-wrap: wrap;
 }
-
+.codecolor{
+  color: #b546da;
+}
 .socials {
   display: flex;
   flex-direction: row;
@@ -212,7 +227,7 @@ i:hover {
 
 .skillsname {
   font-size: 22px;
-  font-family: "Fira Code" !important;
+ 
 }
 
 footer {
@@ -253,7 +268,7 @@ input[type=text], input[type=email], .textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-family: "fira code";
+
 }
 
 .aboutMe {
@@ -362,7 +377,9 @@ hr {
 .width60 {
   width: 60%;
 }
-
+.bracketcolor{
+  color:#b5cf31;
+}
 .white-font {
   color: white;
 }
@@ -434,7 +451,7 @@ hr {
 .profilepicture {
   margin: 10px 0 0 0;
   width: 100%; /* Makes the image responsive */
-  max-width: 320px;
+  max-width: 380px;
   border-radius: 10%;
   overflow: hidden;
   animation: imgFloat 6.2s ease-in-out infinite;
@@ -530,7 +547,7 @@ h4 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   color: #555;
 }
 
@@ -920,7 +937,9 @@ button {
   font-family: "poppins";
 } 
 
-  
+  .poppins{
+     font-family: "poppins"!important;
+  }
 .chat-icon {
   position: fixed;
   bottom: 20px;

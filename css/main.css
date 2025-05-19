@@ -4,6 +4,7 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 }
+
 .fade-in {
   opacity: 0; 
   animation: fadeIn 3s forwards; 
@@ -78,7 +79,7 @@ body {
   z-index: 1000;
 }
 .navbar .logo span {
-  color: #d24aff;
+  color: #b546da;
 }
 .navbar .nav-items {
   display: flex;
@@ -87,12 +88,13 @@ body {
   font-weight: bold;
 }
 .navbar .nav-items :hover {
-  color: #d24aff;
+  color: #b546da;
   font-weight: bold;
 }
+
 .navbar .nav-items a li {
   display: inline-block;
-  padding-right: 1em;
+  padding-right: 2em;
   color: black;
 }
 
@@ -103,7 +105,9 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
 }
-
+.codefont{
+  font-family: Fira Code;
+}
 .education:hover {
   transform: scale(1.1);
 }
@@ -117,7 +121,7 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 45px;
 }
 
 ul {
@@ -130,6 +134,7 @@ ul {
 }
 
 .section1 {
+  width: 96%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -137,25 +142,36 @@ ul {
 }
 
 .left-col {
-  width: 50%;
+  width: 60%;
 }
-
+.padding30px{
+  padding: 30px;
+}
+.flexcenter{
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
 .paddingbottom50px {
   padding-bottom: 50px;
 }
-
+.padddingtop30{
+  padding-top: 30px;
+}
 .heading {
-  color: #d24aff;
+  color: #b546da;
+  font-size: 40px;
+}
+.font38{
   font-size: 38px;
 }
-
 .vt323 {
   font-family: "VT323";
 }
 
 .primary-button {
   text-decoration: none;
-  background-color: #d24aff;
+  background-color: #b546da;
   padding: 20px;
   border-radius: 20px;
   color: white;
@@ -163,11 +179,7 @@ ul {
   text-align: center;
 }
 
-.profilepicture {
-  max-width: 510px;
-  max-height: 510px;
-  border-radius: 100px;
-}
+
 
 .center {
   display: flex;
@@ -188,10 +200,12 @@ ul {
 .contanier {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   text-align: center;
+  flex-wrap: wrap;
 }
-
+.codecolor{
+  color: #b546da;
+}
 .socials {
   display: flex;
   flex-direction: row;
@@ -204,7 +218,7 @@ li i {
 }
 
 i:hover {
-  color: #d24aff;
+  color: #b546da;
 }
 
 .fa:hover {
@@ -212,8 +226,8 @@ i:hover {
 }
 
 .skillsname {
-  font-size: 30px;
-  font-family: "Fira Code" !important;
+  font-size: 22px;
+ 
 }
 
 footer {
@@ -254,7 +268,7 @@ input[type=text], input[type=email], .textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-family: "fira code";
+
 }
 
 .aboutMe {
@@ -349,7 +363,7 @@ body {
 
 .contact-me {
   margin-bottom: 20px;
-  background-image: url(/images/Art\ Warehouse\ in\ Boeotia\ by\ A31\ Architecture\ \(1\).jfif);
+  background-image: url('/images/Art\ Warehouse\ in\ Boeotia\ by\ A31\ Architecture\ \(1\).jfif');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -363,7 +377,9 @@ hr {
 .width60 {
   width: 60%;
 }
-
+.bracketcolor{
+  color:#b5cf31;
+}
 .white-font {
   color: white;
 }
@@ -390,12 +406,11 @@ hr {
 }
 
 .dev-section {
-  padding-bottom: 1em;
   color: #3a3939;
 }
 
 .purple-line {
-  border-bottom: 2px solid #d24aff;
+  border-bottom: 2px solid #b546da;
 }
 
 .monoton {
@@ -409,13 +424,18 @@ hr {
 .width290PX {
   width: 290px;
 }
-
+.typed-text{
+  color: black;
+}
+.cursor{
+  color:#b546da;
+}
 .secondary-button {
   text-decoration: none;
-  border: 2px solid #d24aff;
+  border: 2px solid #b546da;
   padding: 20px;
   border-radius: 20px;
-  color: #d24aff;
+  color: #b546da;
   font-weight: bold;
   text-align: center;
   margin: 24px 0;
@@ -428,7 +448,30 @@ hr {
 .image:hover { 
   transform: scale(1.5);
 }
+.profilepicture {
+  margin: 10px 0 0 0;
+  width: 100%; /* Makes the image responsive */
+  max-width: 380px;
+  border-radius: 10%;
+  overflow: hidden;
+  animation: imgFloat 6.2s ease-in-out infinite;
+}
 
+
+.profilepicture img {
+  width: 100%; /* Adjusted for responsiveness */
+  max-width: 100%; /* Ensures the image doesn't exceed the container's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+
+@keyframes imgFloat {
+  50% {
+    transform: translateY(10px);
+    border-radius: 5%
+  }
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -444,6 +487,104 @@ hr {
 .card:hover { 
   transform: scale(1.1);
 }
+
+
+/* timeline */
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+  transform: translateX(50px);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background: #8a185d;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 500px;
+}
+
+
+
+h4 {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Timeline animation */
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.game-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+canvas {
+  background-color: black; /* Ensure it's visible */
+  display: block;
+  margin: auto;
+  border: 2px solid white;
+}
+
+
+@media (max-width: 600px) {
+  .timeline-item {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .timeline-item:nth-child(even) {
+      flex-direction: column;
+  }
+
+  .content {
+      text-align: center;
+  }
+}
+
+
 
 .title {
   color: grey;
@@ -492,7 +633,7 @@ a {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #d24aff;
+  background-color: #b546da;
   text-align: center;
   width: 100%;
   font-size: 18px;
@@ -681,7 +822,7 @@ a {
   }
   .left-col {
     height: 47vh;
-    width: 50%;
+    width: 60%;
     padding-top: 113px;
     font-size: 14px;
   }
@@ -764,7 +905,7 @@ a {
 }
 
 .user-message {
-  background-color: #d24aff;
+  background-color: #b546da;
   align-self: flex-end;
   color: #ffffff;
 }
@@ -788,7 +929,7 @@ input[type=text] {
 
 button {
   width: 20%;
-  background-color: #d24aff;
+  background-color: #b546da;
 
   color: white;
   border: none;
@@ -796,14 +937,16 @@ button {
   font-family: "poppins";
 } 
 
-  
+  .poppins{
+     font-family: "poppins"!important;
+  }
 .chat-icon {
   position: fixed;
   bottom: 20px;
   right: 30px;
   font-size: 30px;
   cursor: pointer;
-  background-color: #d24aff;
+  background-color: #b546da;
 
   color: white;
   border-radius: 50%;
@@ -840,8 +983,8 @@ button {
 }  
 
 .chat-header {
-  background-color: #d24aff;
-  background-image: linear-gradient(#8a185d, #d24aff);
+  background-color: #b546da;
+  background-image: linear-gradient(#8a185d, #b546da);
   color: white;
   padding: 10px;
   display: flex;
@@ -874,9 +1017,124 @@ button {
 .send-button {
   padding: 10px 15px;
   border: none;
-  background-color: #d24aff;
-   background-image: linear-gradient(#8a185d, #d24aff);
+  background-color: #b546da;
+   background-image: linear-gradient(#8a185d, #b546da);
   color: white;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
+}
+
+
+.skills-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  width: 90%;
+  max-width: 600px;
+}
+
+.skill {
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  color: #2d3436;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-percent {
+  color: #636e72;
+  font-size: 0.85rem;
+}
+
+.skill-bar {
+  background: #f0f0f0;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  border-radius: 4px;
+  width: 0;
+  animation: fill 1.5s ease-in-out forwards;
+}
+
+/* Skill Colors */
+.skill:nth-child(1) .skill-fill {
+  background: linear-gradient(90deg, #ff6b6b, #ff8787);
+}
+
+.skill:nth-child(2) .skill-fill {
+  background: linear-gradient(90deg, #4ecdc4, #66d9da);
+}
+
+.skill:nth-child(3) .skill-fill {
+  background: linear-gradient(90deg, #ff9f43, #ffb95c);
+}
+
+.skill:nth-child(4) .skill-fill {
+  background: linear-gradient(90deg, #6c5ce7, #8476ff);
+}
+
+/* Animation */
+@keyframes fill {
+  from { width: 0; }
+  to { width: var(--skill-level); }
+}
+
+/* Hover Effects */
+.skill:hover .skill-name {
+  transform: translateX(5px);
+}
+
+.skill:hover .skill-bar {
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+      padding: 1.5rem;
+  }
+  
+  .skill-name {
+      font-size: 0.85rem;
+  }
+  
+  .skill-percent {
+      font-size: 0.75rem;
+  }
+}
+.vertical-overflow{
+  
+  overflow-x: auto;
+}
+.certificate-cards {
+  display: flex;
+  margin-bottom: 20px;
+}
+.margin1em{
+  margin: 1em;
+}
+.card-certificate {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  height: 350px;
+  padding: 20px;
+  background: rgba(166, 152, 152, 0.2705882353);
+    margin: 1em;
 }

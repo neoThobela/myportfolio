@@ -58,7 +58,7 @@ start index.html
 
 ## 🌐 Live Demo
 Check out the live version here 👉
-🔗 [([https://myportfolio-5ozw.onrender.com/](https://myportfolioii.onrender.com/)](https://myportfolioneothobela.onrender.com)
+🔗 [[([https://myportfolio-5ozw.onrender.com/](https://myportfolioii.onrender.com/)](https://myportfolioneothobela.onrender.com)](https://neo-thobela.onrender.com/)
 
 ## 📫 Contact Me
 I'd love to hear from you!

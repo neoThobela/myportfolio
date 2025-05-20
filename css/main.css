@@ -739,7 +739,7 @@ canvas {
   color: var(--main-color);
   opacity: 0.8;
   font-size: 0.5rem;
-  animation: textFloat 3s ease-in-out infinite;
+  animation: textFloat 6s ease-in-out infinite;
 }
 
 @keyframes textFloat {

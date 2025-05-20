@@ -150,7 +150,8 @@ ul {
 .flexcenter{
   display: flex;
   flex-direction: row-reverse;
-  
+ 
+
 }
 .paddingbottom50px {
   padding-bottom: 50px;
@@ -191,6 +192,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .width82 {
@@ -570,20 +572,12 @@ canvas {
 
 
 @media (max-width: 600px) {
-  .timeline-item {
-      flex-direction: column;
-      text-align: center;
-  }
   
-  .timeline-item:nth-child(even) {
-      flex-direction: column;
-  }
-
+  
   .content {
       text-align: center;
   }
 }
-
 
 
 .title {
@@ -669,7 +663,7 @@ a {
 
 .profile-cards {
   display: flex;
-  margin-bottom: 20PX;
+  margin-bottom: 20px;
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-between;
@@ -684,15 +678,33 @@ a {
   margin-bottom: 45px;
 }
 
-@media screen and (max-width: 1024px) {
-  .contanier {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: flex-end;
+@media screen and (max-width: 820px) {
+  .center {
+    display: block;
   }
+  p{
+    width: 70%;
+  }
+   .section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+    padding-top: 108px;
+    flex-direction: column;
+}
+.center-page {
+  align-content: center;
+  /* height: 155vh; */
+}
+  .aboutMe {
+  width: 60%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 20px;
+}
+
   .skills {
     width: 87%;
   }
@@ -705,22 +717,31 @@ a {
   .showOnMobile {
     display: block;
   }
+ 
+.flexcenter {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;}
+
 }
 
 
 @media all and (max-width: 766px) {
+  body{
+    height:100vh;
+  }
   .width33 {
     width: 52%;
   }
-  .section1 {
-    display: flex;
-    justify-content: space-around;
+ .section1 {
+    display: flex
+;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    height: 150vh;
-    padding-top: 78px;
-    flex-direction: column;
-}
+    /* height: 42%; */
+    /* padding-top: 78px; */
+    flex-wrap: nowrap;}
 .center-page {
   align-content: center;
   height: 155vh;
@@ -746,21 +767,55 @@ a {
     align-items: flex-start;
     flex-direction: column;
   }
+    .flexcenter {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;}
 }
 @media all and (max-width: 768px) {
+   .card-certificate{
+    width: 500px;
+  }
   .width33 {
     width: 52%;
   }
+  .certificate-cards {
+    display: flex
+;
+    margin-bottom: 20px;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+  .section1 {
+    display: flex
+;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    flex-wrap: nowrap;}
   .expirence {
     display: flex;
     align-content: stretch;
     justify-content: center;
   }
+  
 }
 @media all and (max-width: 675px) {
+  .card-certificate{
+    width: 400px;
+  }
   .center-page {
     height: 100%;
   }
+  
+.certificate-cards {
+    display: flex
+;
+    margin-bottom: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
   .expirence {
     display: flex;
     align-content: stretch;
@@ -771,7 +826,7 @@ a {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    height: 150vh;
+     height: 176vh;
     padding-top: 78px;
     flex-wrap: nowrap;
   }
@@ -782,6 +837,11 @@ a {
   }
   .button-div {
     margin-right: 45px;
+  }
+    .flexcenter {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
   .exp-responsive {
     display: flex;
@@ -820,6 +880,12 @@ a {
     align-content: stretch;
     justify-content: center;
   }
+
+    .flexcenter {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;}
+
   .left-col {
     height: 47vh;
     width: 60%;
@@ -856,6 +922,12 @@ a {
     padding-top: 113px;
     font-size: 14px;
   }
+
+  .flexcenter {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;}
+
   .image {
     width: 90%;
   }

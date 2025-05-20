@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Neo Thobela Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+ 
+ /* IMPORTING FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,700;1,800&display=swap');
+        </style>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+<body>
+<!-- THE NAVIGATION BAR -->
+<div class="navbar ">
+       
+  <div class ="contents">
+    <a href="#"class="logo" id="myPortfolio">My<span>Portfolio</span></a>
+ 
+    
+    <ul class="side-bar">
+      <li onclick=hideSidebar()><i class="fa fa-times hamburger-btn" ></i></li>
+
+
+      <a href="#home"><li class="side-navitems">HOME</li></a>
+      <a href="#about"><li class="side-navitems">ABOUT</li></a>
+      <a href="#skills"><li class="side-navitems">SKILLS</li></a>
+      <a href="#projects"><li class="side-navitems">PROJECT</li></a>
+      <a href="#contacts"><li class="side-navitems">CONTACT</li></a>
+    </ul>
+
+    <ul class="nav-items">
+  
+      <a href="#home" class="hideOnMobile"><li >HOME</li></a>
+      <a href="#about" class="hideOnMobile"><li >ABOUT</li></a>
+      <a href="#skills" class="hideOnMobile"><li >SKILLS</li></a>
+      <a href="#projects" class="hideOnMobile"><li >PROJECTS</li></a>
+  
+      <a href="#contacts" class="hideOnMobile"><li >CONTACT</li></a>
+    <a href="#" class="showOnMobile"> <li onclick=showSidebar()><i class="fa fa-bars hamburger-btn " ></i></li></a> 
+
+    </ul>
+  
+  </div>
+</div>
+  <!-- THE MAIN DIV -->
+  <div class="main-container fade-in">
+
+    
+      <!-- THE HOME PAGE -->
+      <div class="homepage center-page" id="home">
+<div class="section1">
+ 
+  <div class="left-col animaion">
+    <h2 class="font38" > <span class='heading'> "HELLO WORLD" </span> I am<span class='heading codefont'> console.log("NEO MBALI SIPHESIHLE THOBELA") </span>
+    </h2>
+    <h3 class="dev-section">
+      <div class="typing-container">
+       <h3><span class="typed-text"></span>
+        <span class="cursor">&nbsp;</span></h3> 
+    </div>
+    </h3>
+    <div class="button ">
+      <div class="button-div">
+        <a href="./cv/neo TCV.pdf.pdf" class="long-button " download="./cv/neo TCV.pdf.pdf">Download resume</a>
+
+      </div>
+  
+    </div>
+   
+    </div>
+    <div class="right-col">
+
+    <img src="images/neo (2).jpg" class="profilepicture" alt="profile picture">
+  </div>
+</div>
+      </div>
+      <div class="center" >
+      <div class="aboutMe  " >
+        <div class="aboutmediv">
+        <h1 class="AboutMeHeading Courier-Prime" id="about">[/> ABOUT ME</h1>
+<div class="purple-line "></div>
+
+     <div class="flexcenter">
+      <div class="center">
+
+      
+<p class="poppins padddingtop30">
+I’m from Standerton, Mpumalanga — a small town where “Hello, World!” felt galaxies away. Little did I know, I was called to Computer Science. In fact, CS chose me — and boy, am I glad it did and I graduated with a BSc in Computer Science and Mathematical Sciences from the University of Limpopo.
+  <br></br>  
+  Since then, I’ve worn more hats than a `switch` statement — Lab Assistant, Software Associate Engineer, even Fashion Designer and Financial Advisor (talk about style and cents!). Whether I’m designing clean code or clean seams, I’m all about detail.
+  <br></br>
+   These days, I’m decoding the past while supporting the future — diving deep into legacy systems with COBOL and mainframe support at ABSA. I aspire to speak fluent JCL, keep jobs running smoothly, and if there’s a bug in the system? Consider it squashed — debugging is my superpower.
+  <br></br>
+  Through every version update of my life, one thing stays constant: I’m a creative coder who loves blending logic with imagination. Whether it's fixing a broken program or piecing together a new project, I always commit — with no rollback.
+</p>
+</div>  
+<div class="padding30px">
+  <section class="journey-section" style="    font-family: monospace;
+    background:#1a1818;
+    color: #ececec;
+    padding: 2.5rem;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: auto;
+    font-size: 14px;
+    font-weight: bold;
+">
+  <h2 style="color: #b546da;">💻 My Career Journey</h2>
+  <pre><code style="width:100%">
+<span class="codecolor">function</span> careerJourney<span class="bracketcolor">()</span> <span class="bracketcolor">{</span>
+  <span class="codecolor">const</span> origin = "Standerton, Mpumalanga";
+  <span class="codecolor">const</span> education = "BSc in Computer Science & Mathematical Sciences
+                                – University of Limpopo";
+
+  <span class="codecolor">const</span> career = <span class="bracketcolor">[</span>
+   <span>"Lab Assistant (2019) - Worked as a lab assistant part-time whilst in University ",
+    "Software Associate Engineer(2022 - 2023) - building sleek front-end interfaces",
+    "Fashion Design Certificate (2023) - stitched creativity into reality",
+    "Financial Advisor (2024) - worked with long term insurence and finavial planning",
+    "COBOL DevOps Trainee (2024 - CURENT) - mastering mainframe and COBOL magic "</span> 
+ <span class="bracketcolor">]</span> ;
+
+  return <span class="bracketcolor">{</span>
+    origin,
+    education,
+    career
+ <span class="bracketcolor">}</span> ;
+<span class="bracketcolor">}</span>
+
+<span class="codecolor">console.log</span>(careerJourney<span class="bracketcolor">()</span>);
+  </code></pre>
+</section>
+   </div>
+ 
+     </div>
+       
+        </div>
+         
+    </div>
+
+
+    
+    
+      <div class="skills background-color-white " >
+        <h1 class="skillsHeading Courier-Prime " id="skills">
+         [/> My Skills
+        </h1>
+        <div class="purple-line "></div>
+        
+        <div class text="skills-contanier">
+          <h2 class="skillsHeading Courier-Prime " id="skills">
+            / Tech Skills
+           </h2>
+          <ul class="contanier">
+           
+            <li class=" image">
+              <div class="padding1em">
+                <img width="75" height="75" src="https://img.icons8.com/color/75/javascript--v1.png" alt="javascript--v1"/>          
+                  <div class="skillsname poppins">JAVASCRIPT</div>
+            
+                </div></li>
+            <li class=" image">
+              <div class="padding1em">
+                <img width="75" height="75" src="https://img.icons8.com/color/75/css3.png" alt="css3"/>
+                <div class="skillsname poppins">CSS</div>
+            
+                </div></li>
+                <li class=" image">
+                  <div class="padding1em">
+                    <img width="75" height="75" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/75/external-sass-a-style-sheet-professional-grade-css-extension-language-logo-shadow-tal-revivo.png" alt="external-sass-a-style-sheet-professional-grade-css-extension-language-logo-shadow-tal-revivo"/>  
+                    <div class="skillsname poppins">SASS</div>              
+                    </div></li>
+                <li class=" image">
+                  <div class="padding1em">
+                    <img width="75" height="75" src="https://img.icons8.com/color/75/html-5--v1.png" alt="html-5--v1"/>
+                    
+                <div class="skillsname poppins">HTML</div>
+                
+                    </div></li>
+                    <li class=" image">
+                      <div class="padding1em">
+                        <img width="75" height="75" src="https://img.icons8.com/fluency/75/sql.png" alt="sql"/>                        
+                    <div class="skillsname poppins">SQL</div>
+                    
+                        </div></li>
+            <li class=" image">
+              <div class="padding1em ">
+                <img width="75" height="75" src="https://img.icons8.com/color/75/mongodb.png" alt="mongodb"/>                
+            <div class="skillsname">MONGODB</div>
+          </div></li>
+          <li class=" image">
+             <div class="padding1em">
+              <img width="75" height="75" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/75/external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-shadow-tal-revivo.png" alt="external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-shadow-tal-revivo"/>  
+              <div class="skillsname poppins">TYPE SCRIPT</div>
+               </div></li>
+            
+                
+           <li class=" image">
+              <div class="padding1em">
+                <img width="75" height="75" src="https://img.icons8.com/color/75/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>                
+            <div class="skillsname poppins">C++</div>
+            
+                </div></li>
+                <li class=" image">
+                  <div class="padding1em">
+                    <img width="75" height="75" src="https://img.icons8.com/fluency/75/angularjs.png" alt="angularjs"/>         
+                     <div class="skillsname poppins">ANGULAR</div>
+                
+                    </div></li>
+                    <li class=" image">
+                      <div class="padding1em">
+                        <img width="75" height="75" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/75/external-react-a-javascript-library-for-building-user-interfaces-logo-shadow-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-shadow-tal-revivo"/>
+                        <div class="skillsname poppins">REACT</div>
+                        </div></li>
+                        <li class=" image">
+                          <div class="padding1em">
+                            <img width="75" height="75" src="https://img.icons8.com/color/75/git.png" alt="git"/>  
+                            <div class="skillsname poppins">GIT</div>                      
+                            </div></li>
+              </div>
+          </ul>
+         
+<h2 class="skillsHeading Courier-Prime " id="skills">
+        / Soft Skills
+       </h2>
+      </div>
+      
+      <div class="skills-container">
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Team Collaboration</span>
+                <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--skill-level: 90%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Communication</span>
+                <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--skill-level: 85%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Problem Solving</span>
+                <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--skill-level: 88%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Attention to detail</span>
+                <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="--skill-level: 82%"></div>
+            </div>
+        </div>
+      
+    </div>
+      <div class="projects-section width90" >
+        
+        <h1 class="heading60px  Courier-Prime "> [/> CERTIFICATES</h1>
+        <div class="purple-line "></div>
+
+        <div class="certificate-cards vertical-overflow ">
+
+        <div class="card-certificate  margin1em">
+          <img src="./images/certi1.png" alt="art gallery photo" style="width:300px; height:200px; background-color: white;">
+          
+          <p class="title">2025</p>
+          <p>cobol software development processes</p>
+          <a href="./images/certi1.png" class="long-button" target="_blank">See certificate</a>
+        </div>
+        <div class="card-certificate  margin1em">
+          <img src="./images/cert2.PNG" alt="art gallery photo" style="width:300px; height:200px; background-color: white;">
+         
+          <p class="title">2025</p>
+          <p>IBM COBOL Data and file Management</p>
+          <a href="./images/cert2.PNG" class="long-button" target="_blank">See certificate</a>
+        </div>
+        <div class="card-certificate  margin1em">
+          <img src="./images/cert3.PNG" alt="art gallery photo" style="width:300px; height:200px; background-color: white;">
+          
+          <p class="title">2025</p>
+          <p>IBM COBOL Core</p>
+          <a href="./images/cert3.PNG" class="long-button" target="_blank">See certificate</a>
+        </div>
+        <div class="card-certificate  margin1em">
+          <img src="./images/cert4.PNG" alt="art gallery photo" style="width:300px; height:200px; background-color: white;">
+          
+          <p class="title">2025</p>
+          <p>IMB COBOL Basics</p>
+          <a href="./images/cert4.PNG" class="long-button" target="_blank">See certificate</a>
+        </div>
+        <div class="card-certificate  margin1em">
+          <img src="./images/cert5.PNG" alt="art gallery photo" style="width:300px; height:200px; background-color: white;">
+        
+          <p class="title">2025</p>
+          <p>Hands-on Introduction to Linux Commands and Shell Scripting</p>
+          <a href="./images/cert5.PNG" class="long-button"target="_blank">See certificate</a>
+        </div> 
+        <div class="card-certificate  margin1em">
+          <img src="./images/Capture.PNG" alt="art gallery photo" style="width:300px; height:200px; background-color: white;">
+        
+          <p class="title">2025</p>
+          <p>COBOL Programming with VSCode</p>
+          <a href="./images/Capture.PNG" class="long-button"target="_blank">See certificate</a>
+        </div>
+             </div>
+             </div>
+
+     <div class="  width90 exp-responsive" id="projects">
+      <h1 class="heading60px width30 Courier-Prime ">[/> PROJECTS</h1>
+      <div class="purple-line "></div>
+      <h2>/ Take a look at some of my work .</h2>
+
+<div class="profile-cards ">
+
+<div class="card">
+  <img src="./images/portfolioApp.png" alt="art gallery photo" style="width:100%; height:250px; background-color: white;">
+  <h2 class="project-heading">PORTFOLIO.</h2>
+  <p class="title">2024</p>
+  <p class="marginbottom45px" style ="height:130px">A clean, modern portfolio web app that showcases my projects, skills, and journey in tech. Designed with a focus on simplicity, creativity, and responsiveness across all devices.
+
+🛠️ Tech used: HTML, CSS, JavaScript</p>
+  <a href="https://github.com/neoThobela/myportfolio" class="long-button">See My Work</a>
+</div>
+<div class="card">
+  <img src="./images/movieApp.png" alt="art gallery photo" style="width:100%; height:250px; background-color: white;">
+  <h2 class="project-heading">MOVIE APP.</h2>
+  <p class="title">2025</p>
+  <p class="marginbottom45px"style ="height:130px">🎬 Movie Explorer App — A dynamic and responsive movie web app built with React. It fetches real-time data from a public movie API to display trending films, genres, and movie details. Users can scroll through featured titles, explore by genre, and dive into movie info with a smooth, modern UI.
+
+🛠️ Tech used: React, JavaScript, HTML, CSS, REST API</p>
+  <a href="https://movieappth-1.onrender.com/" class="long-button">See My Work</a>
+</div>
+<div class="card">
+  <img src="./images/covid19.png" alt="John" style="width:100%; height:250px">
+  <h2 class="project-heading">COVID APP.</h2>
+  <p class="title">2022</p>
+  <p class="marginbottom45px" style ="height:130px">An interactive web app that fetches real-time COVID-19 data from an external API and displays it in a clean, user-friendly interface. Built to track stats like confirmed cases, recoveries, and deaths globally or by country.
+
+🛠️ Tech used: HTML, CSS, JavaScript, Fetch API</p>
+  <a href="https://github.com/neoThobela/covid-19" class="long-button">See My Work</a>
+</div>
+     </div> <div >
+       
+       
+      </div>
+    </div>
+     </div>
+     <div class="center">
+      <div class="contact-me width82 boarderradius20px"  id="contacts">
+        <div class="container1 overlay boarderradius20px">
+          <div class="contact width60 boarderradius20px">
+     <h1 class="white-font Courier-Prime">[/> SAY HI!<span style='font-size:40px;'>&#128512;</span>
+</h1>
+     <form  action="https://formspree.io/f/xanoknpo"
+  method="POST" class="contact">
+      <div  >
+
+      <label for="name" class="white-font">Name</label>
+      <input type="text"id="name"  placeholder="Name..." name="name">
+      <label for="email" class="white-font poppins">Email Address</label>
+      <input type="email"id="email"class="poppins" placeholder="Email..." name="email">
+      <label for="number" class="white-font">Mobile Number</label>
+      <input type="text"id="number" class="poppins" placeholder="Mobile Number..."name="number">
+<label for="message" class="white-font" >Message</label>
+<textarea name="message" class="textarea poppins" id="message"placeholder="Enter a message..." ></textarea>
+
+      </div>
+<div class="width30 no-width">
+  <button type="submit"  class="long-button poppins">Send</button>
+ 
+</div>
+
+
+
+
+</form>
+<!-- modify this form HTML and place wherever you want your form -->
+
+</div>
+          </div>
+        </div>
+       <div id="clock-container">
+      <p id="location-time"></p>
+      <p id="time-pun">Thanks for scrolling — you’ve officially reached the bottom of my stack.⏰</p>
+    </div>
+      </div>
+      <!-- <div class="game-container">
+        <h2>/ Snake Game</h2>
+        <canvas id="snakeCanvas"></canvas>
+        <p>Use arrow keys to control the snake.</p>
+    </div> -->
+    
+    
+      <footer>
+        <div id="chat-icon" class="chat-icon" onclick="toggleChatbot()">
+          💬
+      </div>
+      
+        <div id="chatbot" class="chatbot" style="display: none;">
+          <div class="chat-header">
+           
+              <h3>🤖 Chat with Me !</h3>
+              <span class="close-btn" onclick="toggleChatbot()">✖</span>
+          </div>
+          <div id="chatbox" class="chatbox"></div>
+          <div class="input-container">
+              <input type="text" id="userInput" class="user-input" placeholder="Type a message...">
+              <button id="sendButton" class="send-button" onclick="sendMessage()">Send</button>
+          </div>
+      </div>
+      
+      
+        <div class="footerCenter">
+       <div class="footer">
+        <p>&copy; Developed by NMST (2024). all rights reserved | 0832816746 | neo.thobela@capacti.org.za</p>
+       </div>
+          <ul class="socials">
+           <a href="tel:27832816746"><li><i class="fa fa-phone" aria-hidden="true"></i></li></a> 
+         
+           <a href="mailto:neo.thobela0002@gmail.com"><li><i class="fa fa-envelope-o" aria-hidden="true"></i></li></a> 
+           <a href="https://www.linkedin.com/in/neo-thobela-472512230/" target="_blank"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a> 
+            <a href="https://github.com/neoThobela" target=”_blank”><li><i class="fa fa-github-alt" aria-hidden="true"></i></li></a>
+          </ul>
+        </div>
+      </footer>
+      
+      </div>
+      
+
+    </div>
+    <!-- side nav -->
+    <script src="script.js">
+      
+    </script>
+</body>
+</html>

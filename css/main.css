@@ -683,14 +683,14 @@ a {
     display: block;
   }
   p{
-    width: 70%;
+    width: 65%;
   }
    .section1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    /* height: 100vh; */
+    height: 100vh;
     padding-top: 108px;
     flex-direction: column;
 }
@@ -732,6 +732,9 @@ a {
   }
   .width33 {
     width: 52%;
+  }
+  p{
+    width: 50%;
   }
  .section1 {
     display: flex
@@ -775,6 +778,9 @@ a {
 @media all and (max-width: 768px) {
    .card-certificate{
     width: 500px;
+  }
+  p{
+    width: 60%;
   }
   .width33 {
     width: 52%;
@@ -838,6 +844,7 @@ a {
   .button-div {
     margin-right: 45px;
   }
+  
     .flexcenter {
     display: flex;
     flex-direction: row-reverse;
@@ -880,7 +887,9 @@ a {
     align-content: stretch;
     justify-content: center;
   }
-
+ p{
+    width: 40%;
+  }
     .flexcenter {
     display: flex;
     flex-direction: row-reverse;

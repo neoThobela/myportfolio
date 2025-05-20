@@ -175,7 +175,31 @@ var typingEffect = new Typed(".typed-text", {
     drawGame(); // Initial screen with "Press Enter to Start"
 });
 
-
+function updateClock() {
+    const timeElement = document.getElementById('location-time');
+    
+    const now = new Date();
+    const options = {
+      timeZoneName: 'short',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    };
+  
+    const formatter = new Intl.DateTimeFormat(undefined, options);
+    const formattedTime = formatter.format(now);
+  
+    timeElement.textContent = `📍 Local time: ${formattedTime}`;
+  }
+  
+  // Update every second
+  updateClock();
+  setInterval(updateClock, 1000);
+  
 
   //end code game
 

@@ -58,7 +58,7 @@ start index.html
 
 ## 🌐 Live Demo
 Check out the live version here 👉
-🔗 [(https://neo-thobela.onrender.com/)]
+🔗 [[(https://neo-thobela.onrender.com/)]](https://nmsportfolio.onrender.com)
 
 ## 📫 Contact Me
 I'd love to hear from you!
